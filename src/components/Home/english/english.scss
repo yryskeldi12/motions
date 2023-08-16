@@ -1,0 +1,104 @@
+#english{
+  .english{
+    &--title{
+      margin: 98px 0 0 0;
+      h1{
+        color: #000;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      &__tome{
+        width: 126px;
+        height: 3px;
+        flex-shrink: 0;
+        border-radius: 2px;
+        background: #6483F6;
+      }
+      img{
+        margin: 60px 0 62px 0;
+      }
+      h2{
+        color: #002AC0;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      p{
+        margin: 16px 0 26px 0;
+        width: 1108px;
+        height: 63px;
+        color: #010D39;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        text-transform: capitalize;
+      }
+      &__list{
+        li{
+          height: 35px;
+          flex-shrink: 0;
+          color: #333;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          text-transform: capitalize;
+        }
+      }
+
+      h3{
+        margin: 32px 0 20px 0;
+        color: #002AC0;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      &__lol{
+        p{
+          width: 1097px;
+          height: 105px;
+          flex-shrink: 0;
+          color: #333;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px;
+          text-transform: capitalize;
+          position: relative;
+          margin: 0 0 0 20px;
+          &::before{
+            content: '';
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #000;
+            position: absolute;
+            top: 10px;
+            left: -20px;
+          }
+        }
+
+      }
+      h6{
+        margin-bottom: 50px;
+        width: 1166px;
+        height: 152px;
+        color: #010D39;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        text-transform: capitalize;
+      }
+
+    }
+  }
+}

@@ -7,13 +7,13 @@ import Study from "./components/Study/study";
 import Contacts from "./components/Contacts/contacts";
 import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
-import Message from './components/Home/Message';
 
 
 function App() {
   return (
     <div className="App">
         <Header/>
+        fake
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About />}/>
