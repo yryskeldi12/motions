@@ -1,0 +1,26 @@
+#youtube {
+
+  h2 {
+    text-align: center;
+    color: #212121;
+    font-size: 34px;
+    font-weight: 500;
+    padding: 100px 0;
+  }
+  .youtube {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    iframe {
+      width: 490px;
+      height: 300px;
+      margin: 15px;
+      border-radius: 5px;
+      background: lightgray 50% / cover no-repeat, #A96565;
+    }
+  }
+}
