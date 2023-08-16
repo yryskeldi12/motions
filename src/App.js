@@ -7,6 +7,7 @@ import Study from "./components/Study/study";
 import Contacts from "./components/Contacts/contacts";
 import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
+import Message from './components/Home/Message';
 
 
 function App() {
