@@ -1,0 +1,22 @@
+// Alignment
+@mixin alignment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  @mixin alignment-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin d-f_fd-c {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @mixin d-f_al-c {
+    display: flex;
+    align-items: center;
+  }
