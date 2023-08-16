@@ -1,27 +1,9 @@
-@import "../../Style/variables.scss";
+@import "../../../style/variables.scss";
 
-@import "../../Style/mixin.scss";
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-
-  to {
-    opacity: 100;
-    transform: translateY(0);
-  }
-}
-
-.hero-contact {
-  opacity: 0;
-  animation: fadeIn 0.5s ease-in-out forwards;
-  /* forwards для сохранения стилей после завершения анимации */
-}
+@import "../../../style/mixin.scss";
 
 #hero {
-  margin: 183px 0 210px 0;
+  margin: 123px 0 210px 0;
 
   .hero {
     display: grid;
@@ -41,7 +23,6 @@
         color: #bbbbbb;
         font-size: 26px;
       }
-
       input {
         background: rgba(255, 255, 255, 0.95);
         border: 0.8px solid rgba(86, 9, 187, 0.2);
@@ -59,7 +40,6 @@
           }
         }
       }
-
       #search-wrap {
         .search-content {
           @include d-f_fd-c;
@@ -90,9 +70,13 @@
         }
       }
     }
-
     &-desc {
 
+      video{
+        width: 150px ;
+        height: 150px;
+        padding: 0 0 0  400px;
+      }
 
       width: 100%;
       float: left;
@@ -107,25 +91,13 @@
           transform: translateX(-50px);
         }
 
-        // 50% {
-        //   opacity: 0;
-        //   transform: translateX(-75%);
-        // }
+         
 
         100% {
           opacity: 1;
           transform: translateX(0);
         }
       }
-
-
-
-
-
-      video {
-        padding: 20px 0 0 400px;
-      }
-
       padding-top: 45px;
 
       &_subtitle {
@@ -134,7 +106,6 @@
         text-transform: capitalize;
         color: rgba(86, 9, 187, 0.8);
       }
-
       &_title {
         font-weight: 600;
         font-size: $h1-64;
@@ -143,7 +114,6 @@
         color: #000000;
         margin: 36px 0 17px 0;
       }
-
       p {
         width: 393px;
         font-weight: 400;
@@ -153,11 +123,10 @@
         color: #606060;
       }
     }
-
     &-block {
       height: 600px;
-      background: rgb(241, 23, 104);
-      background: linear-gradient(133deg, rgba(241, 23, 104, 0.40379901960784315) 5%, rgba(255, 255, 255, 0.908000700280112) 36%, rgba(255, 255, 255, 0.9136029411764706) 56%, rgba(149, 0, 255, 0.38139005602240894) 81%);
+      background: rgb(241,23,104);
+background: linear-gradient(133deg, rgba(241,23,104,0.40379901960784315) 5%, rgba(255,255,255,0.908000700280112) 36%, rgba(255,255,255,0.9136029411764706) 56%, rgba(149,0,255,0.38139005602240894) 81%);
       border-radius: 18.75px;
       position: relative;
 
@@ -171,9 +140,8 @@
           to {
             transform: translateY(0px);
           }
-
           from {
-            transform: translateY(38px);
+            transform: translateY(28px);
           }
         }
 
@@ -182,259 +150,251 @@
           height: 100%;
         }
       }
-
       .sm-1 {
         position: absolute;
         top: 48px;
         left: 28px;
       }
-
       &_lg-img {
         width: 302px;
         height: 302px;
         border-radius: 50%;
         animation: example2 2.2s linear infinite alternate;
 
-        @keyframes example2
-        {
-            to {
-              transform: translateY(-15px);
-            }
-  
-            from {
-              transform: translateY(10px);
-            }
+        @keyframes example2 {
+          to {
+            transform: translateY(-8px);
           }
-  
-          img {
-            width: 100%;
-            height: 100%;
+          from {
+            transform: translateY(10px);
           }
         }
-  
-        .lg-1 {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .lg-1 {
+        position: absolute;
+        top: -18px;
+        right: -24px;
+      }
+      .lg-2 {
+        position: absolute;
+        bottom: -18px;
+        left: -24px;
+      }
+      .sm-2 {
+        position: absolute;
+        bottom: 48px;
+        right: 28px;
+      }
+      &_blur-top {
+        width: 70%;
+        height:70%;
+        border-radius: 18.75px 0 88% 0;
+        overflow: hidden;
+        position: relative;
+
+        div {
           position: absolute;
-          top: -18px;
-          right: -24px;
+          top: 0;
+          left: 0;
+          width: 55%;
+          height: 55%;
+          z-index: -1;
+          background: rgba(255, 71, 71, 0.5);
+          filter: blur(70.3125px);
         }
-  
-        .lg-2 {
-          position: absolute;
-          bottom: -18px;
-          left: -24px;
-        }
-  
-        .sm-2 {
-          position: absolute;
-          bottom: 48px;
-          right: 28px;
-        }
-  
-        &_blur-top {
-          width: 70%;
-          height: 70%;
-          border-radius: 18.75px 0 88% 0;
-          overflow: hidden;
-          position: relative;
-  
-          div {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 55%;
-            height: 55%;
-            z-index: -1;
-            background: rgba(255, 71, 71, 0.5);
-            filter: blur(70.3125px);
-          }
-        }
-  
-        &_blur-bottom {
-          width: 70%;
-          height: 70%;
-          border-radius: 88% 0 18.75px 0;
-          overflow: hidden;
+      }
+      &_blur-bottom {
+        width: 70%;
+        height:70%;
+        border-radius: 88% 0 18.75px 0;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        div {
           position: absolute;
           bottom: 0;
           right: 0;
-  
-          div {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 55%;
-            height: 55%;
-            z-index: -1;
-            background: rgba(86, 9, 187, 0.3);
-            filter: blur(70.3125px);
-          }
-        }
-      }
-  
-      &-contact {
-        @include alignment;
-        width: 69%;
-        background: $bg-light;
-        box-shadow: -2px 2px 9px 1px rgba(83, 83, 83, 0.25), 2px 6px 5px 1px rgba(178, 178, 178, 0.25);
-        border-radius: 80px;
-        padding: 24px 30px;
-        position: absolute;
-        bottom: -32px;
-        left: 0;
-  
-        opacity: 100;
-        transform: translateX(-20px);
-        transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-  
-  
-  
-  
-        &_group {
-          @include d-f_al-c;
-          column-gap: 16px;
-  
-          &-bg {
-            @include alignment-center;
-            width: 52px;
-            height: 52px;
-            border-radius: 50%;
-            background: #FDE7E9;
-          }
-  
-          &-desc {
-            width: 180px;
-  
-            h5 {
-              font-weight: 400;
-              font-size: 12px;
-              color: $heading-dark;
-              margin-bottom: 10px;
-            }
-  
-            input {
-              width: 100%;
-              font-weight: 400;
-              font-size: 17px;
-              color: #000000;
-            }
-          }
-        }
-  
-        &_btn {
-          background: #109FEF;
-          border-radius: 80px;
-          font-weight: 500;
-          font-size: 17px;
-          color: $text-white;
-          padding: 19px 70px;
+          width: 55%;
+          height: 55%;
+          z-index: -1;
+          background: rgba(86, 9, 187, 0.3);
+          filter: blur(70.3125px);
         }
       }
     }
-  }
-  
-  @media (max-width: 1140px) {
-    #hero {
-      .hero {
-        display: grid;
-        grid-template-columns: 1fr 1.2fr;
-        column-gap: 80px;
-        position: relative;
-  
-        &-desc {
-          &_subtitle {
-            font-size: 18px;
-          }
-  
-          &_title {
-            font-size: 50px;
-            line-height: 55px;
-          }
+    &-contact {
+      width: 100%;
+      float: left;
+      padding-right: 20px;
+      opacity: 0;
+      transform: translateX(-50px);
+      animation: slideIn 0.5s forwards;
+
+      @keyframes slideIn {
+        0% {
+          opacity: 0;
+          transform: translateX(-50px);
         }
-  
-        &-block {
-          height: 560px;
-  
-          &_lg-img {
-            width: 256px;
-            height: 256px;
-          }
-  
-          .lg-1 {
-            top: -10px;
-            right: -15px;
-          }
-        }
-  
-        &-contact {
-          width: 80%;
-          bottom: -68px;
-        }
-      }
-    }
-  
-  }
-  
-  @media (max-width: 1024px) {
-    #hero {
-      margin: 148px 0 124px 0;
-  
-      .hero {
-        grid-template-columns: 1fr;
-  
-        &-search {
-          display: block;
-          width: 100%;
-  
-          input {
-            width: 100%;
-            padding: 16px 0 16px 38px;
-          }
-        }
-  
-        &-desc {
-          padding: 38px 0 55px 0;
-          width: 100%;
-  
-          &_subtitle {
-            font-size: 18px;
-          }
-  
-          &_title {
-            font-size: $h1-768;
-            line-height: normal;
-            margin: 15px 0;
-          }
-  
-          p {
-            width: 90%;
-          }
-        }
-  
-        &-block {
-          width: 100%;
-          height: 640px;
-          margin: 0 auto;
-  
-          .lg-1 {
-            top: 0px;
-            right: 70px;
-          }
-  
-          .lg-2 {
-            bottom: 0px;
-            left: 70px;
-          }
-  
-          .sm-1 {
-            left: 120px;
-          }
-  
-          .sm-2 {
-            bottom: 80px;
-          right: 102px;
+
+         
+
+        100% {
+          opacity: 1;
+          transform: translateX(0);
         }
       }
 
+      @include alignment;
+      width: 69%;
+      background: $bg-light;
+      box-shadow: -2px 2px 9px 1px rgba(83, 83, 83, 0.25), 2px 6px 5px 1px rgba(178, 178, 178, 0.25);
+      border-radius: 80px;
+      padding: 24px 30px;
+      position: absolute;
+      bottom: -32px;
+      left: 0;
+
+
+      &_group {
+        @include d-f_al-c;
+        column-gap: 16px;
+
+        &-bg {
+          @include alignment-center;
+          width: 52px;
+          height: 52px;
+          border-radius: 50%;
+          background: #FDE7E9;
+        }
+        &-desc {
+          width: 180px;
+
+          h5 {
+            font-weight: 400;
+            font-size: 12px;
+            color: $heading-dark;
+            margin-bottom: 10px;
+          }
+          input {
+            width: 100%;
+            font-weight: 400;
+            font-size: 17px;
+            color: #000000;
+            border: none;
+            outline: none;
+          }
+        }
+      }
+      &_btn {
+        background: #109FEF;
+        border-radius: 80px;
+        font-weight: 500;
+        font-size: 17px;
+        color: $text-white;
+        padding: 19px 70px;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  #hero {
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      column-gap: 80px;
+      position: relative;
+
+      &-desc {
+        &_subtitle {
+          font-size: 18px;
+        }
+        &_title {
+          font-size: 50px;
+          line-height: 55px;
+        }
+      }
+      &-block {
+        height: 560px;
+
+        &_lg-img {
+          width: 256px;
+          height: 256px;
+        }
+        .lg-1 {
+          top: -10px;
+          right: -15px;
+        }
+      }
+      &-contact {
+        width: 80%;
+        bottom: -68px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1024px) {
+  #hero {
+    margin: 148px 0 124px 0;
+    .hero {
+      grid-template-columns: 1fr;
+
+      &-search {
+        display: block;
+        width: 100%;
+
+        input {
+          width: 100%;
+          padding: 16px 0 16px 38px;
+        }
+      }
+      &-desc {
+        padding: 38px 0 55px 0;
+        width: 100%;
+
+        &_subtitle {
+          font-size: 18px;
+        }
+        &_title {
+          font-size: $h1-768;
+          line-height: normal;
+          margin: 15px 0;
+        }
+        p {
+          width: 90%;
+        }
+      }
+      &-block {
+        width: 100%;
+        height: 640px;
+        margin: 0 auto;
+
+        .lg-1 {
+          top: 0px;
+          right: 70px;
+        }
+        .lg-2 {
+          bottom: 0px;
+          left: 70px;
+        }
+        .sm-1 {
+          left: 120px;
+        }
+        .sm-2 {
+          bottom: 80px;
+          right: 102px;
+        }
+      }
       &-contact {
         position: static;
         @include d-f_fd-c;
@@ -455,12 +415,10 @@
             height: 65px;
           }
         }
-
         .group-2 {
           width: 100%;
           margin: 0;
         }
-
         &_btn {
           width: 100%;
         }
@@ -478,28 +436,23 @@
           width: 290px;
           height: 290px;
         }
-
         .lg-1 {
           top: -10px;
           right: 0;
         }
-
         .lg-2 {
           bottom: -10px;
           left: 0;
         }
-
         .sm-2 {
           bottom: 60px;
           right: 50px;
         }
-
         .sm-1 {
           top: 60px;
           left: 50px;
         }
       }
-
       &-contact {
         position: static;
         @include d-f_fd-c;
@@ -520,12 +473,10 @@
             height: 65px;
           }
         }
-
         .group-2 {
           width: 100%;
           margin: 0;
         }
-
         &_btn {
           width: 100%;
         }
@@ -542,12 +493,10 @@
           width: 230px;
           height: 230px;
         }
-
         .lg-1 {
           top: -18px;
           right: -4px;
         }
-
         .lg-2 {
           bottom: -18px;
           left: -4px;
@@ -576,31 +525,26 @@
           height: 37px;
           padding: 0 0 0 38px;
         }
-
         #search-wrap {
           .search-content {
             top: 42px;
           }
         }
       }
-
       &-desc {
         padding: 38px 0 39px 0;
 
         &_subtitle {
           font-size: 20px;
         }
-
         &_title {
           font-size: 32px;
           width: 90%;
         }
-
         p {
           width: 100%;
         }
       }
-
       &-block {
         height: 350px;
 
@@ -608,45 +552,37 @@
           width: 159.6px;
           height: 159.6px;
         }
-
         .lg-1 {
           top: -10px;
           right: 8px;
         }
-
         .lg-2 {
           bottom: 0px;
           left: 10px;
         }
-
         &_sm-img {
           width: 105px;
           height: 105px;
         }
-
         .sm-1 {
           top: 15px;
           left: 20px;
         }
-
         .sm-2 {
           bottom: 40px;
           right: 20px;
         }
       }
-
       &-contact {
         &_group {
           &-bg {
             width: 52px;
             height: 52px;
           }
-
           &-desc {
             h5 {
               font-size: 12px;
             }
-
             input {
               font-size: 17px;
             }
