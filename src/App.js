@@ -9,31 +9,11 @@ import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
 import Flag from "./components/Study/Abroad/Choose/Flag";
 import Country from "./components/Study/Abroad/Choose/Country";
-
-
-
-function App() {
-    return (
-        <div className="App">
-            <Header/>
-            <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/about" element={<About/>}/>
-                <Route path="/study" element={<Study/>}/>
-                <Route path="/choose" element={<Flag/>}/>
-                <Route path="/choose" element={<Flag/>}/>
-                <Route path="/contacts" element={<Contacts/>}/>
-                <Route path="/country" element={<Country/>}/>
-            </Routes>
-            <Footer/>
-        </div>
-    );
-import Loading from "./components/loading/loading";
 import English from "./components/Home/english/english";
 import Do from "./components/Home/do/do";
 import What from "./components/Home/what/what";
 import Paper from "./components/Home/paper/paper";
-import Tabs from "./components/Tabs/tabs";
+
 
 function App() {
     const [load, setLoad] = useState(true)
@@ -54,22 +34,22 @@ function App() {
             <div className="App" style={{
                 display: load ? 'none' : 'block'
             }}>
-        <Header/>
+                <Header/>
                 {/*<Tabs/>*/}
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/english" element={<English/>}/>
-        <Route path="/do" element={<Do/>}/>
-        <Route path="/what" element={<What/>}/>
-        <Route path="/paper" element={<Paper/>}/>
-        <Route path="/about" element={<About />}/>
-        <Route path="/study" element={<Study />}/>
-        <Route path="/contacts" element={<Contacts />}/>
-      </Routes>
-        <Footer/>
-    </div>
-            </>
-  );
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/english" element={<English/>}/>
+                    <Route path="/do" element={<Do/>}/>
+                    <Route path="/what" element={<What/>}/>
+                    <Route path="/paper" element={<Paper/>}/>
+                    <Route path="/about" element={<About/>}/>
+                    <Route path="/study" element={<Study/>}/>
+                    <Route path="/contacts" element={<Contacts/>}/>
+                </Routes>
+                <Footer/>
+            </div>
+        </>
+    );
 }
 
 export default App;
