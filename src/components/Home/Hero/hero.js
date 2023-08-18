@@ -8,8 +8,8 @@ import heroContactImg1 from "../../../Image/Hero-1.png";
 import heroContactImg2 from "../../../Image/Hero-2.png";
 import {CiSearch} from "react-icons/ci";
 import {NavLink} from "react-router-dom";
-import OutsideClickHandler from "react-outside-click-handler";
 import video from  '../../../Image/video.webm'
+import OutsideClickHandler from "react-outside-click-handler/esm/OutsideClickHandler";
 
 const Hero = () => {
     const [searchContent, setSearchContent] = useState(false);
