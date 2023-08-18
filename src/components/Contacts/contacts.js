@@ -3,7 +3,6 @@ import './contacts.scss'
 const Contacts = () => {
     return (
         <div>
-            <h1>contacts</h1>
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.scss'
 import about from '../../../src/Image/about.svg'
-// import Our from "./our";
+import Our from "./our/our";
 const AboutUs = () => {
     return (
         <div id="about">
@@ -21,7 +21,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            {/*<Our/>*/}
+            <Our/>
         </div>
     );
 };
