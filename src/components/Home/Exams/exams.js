@@ -5,6 +5,9 @@ import need from '../../../../src/Image/need.svg'
 import home from '../../../../src/Image/here.svg'
 import oper from '../../../../src/Image/oper.svg'
 import {NavLink} from "react-router-dom";
+import iii from '../../../../src/Image/iiiiiiii.svg'
+import bbb from '../../../../src/Image/bbb.svg'
+import fff from '../../../../src/Image/fff.svg'
 const Exams = () => {
     return (
         <div id="exams">
@@ -36,7 +39,10 @@ const Exams = () => {
                             <div className="exams--text__aptis--for">
                                 <div className="exams--text__aptis--for__hello">
                                     <div className="exams--text__aptis--for__hello--img">
-                                        <NavLink to="/what"> <img width={235} height={161} src={need} alt=""/></NavLink>
+                                        <NavLink to="/what"> <img width={240} height={161} style={{margin: '0 -10px 0 5px'}} src={need} alt=""/></NavLink>
+                                   <div className="exams--text__aptis--for__hello--img__bbb">
+                                       <NavLink to="/what"><img src={bbb} alt=""/></NavLink>
+                                   </div>
                                     </div>
                                     <div className="exams--text__aptis--for__hello--nomer">
                                         <button>aptis</button>
@@ -48,8 +54,11 @@ const Exams = () => {
                                     </div>
                                 </div>
                                 <div className="exams--text__aptis--for__hello">
-                                    <div className="exams--text__aptis--for__hello--img">
-                                        <NavLink to="/english"><img width={190} height={161} style={{margin: '0 20px 0 15px'}} src={home} alt=""/></NavLink>
+                                    <div className="exams--text__aptis--for__hello--is">
+                                        <NavLink to="/english"><img width={190} height={161} style={{margin: '0 20px 0 25px'}} src={home} alt=""/></NavLink>
+                                        <div className="exams--text__aptis--for__hello--is__iii">
+                                           <NavLink to="./english"><img src={iii} alt=""/></NavLink>
+                                        </div>
                                     </div>
                                     <div className="exams--text__aptis--for__hello--nomer">
                                         <button>IELTS</button>
@@ -60,8 +69,11 @@ const Exams = () => {
                                     </div>
                                 </div>
                                 <div className="exams--text__aptis--for__hello">
-                                    <div className="exams--text__aptis--for__hello--img">
-                                        <NavLink to="/paper"><img  width={190} height={161} style={{margin: '0 20px 0 15px'}} src={oper} alt=""/></NavLink>
+                                    <div className="exams--text__aptis--for__hello--it">
+                                        <NavLink to="/paper"><img  width={190} height={161} style={{margin: '0 20px 0 25px'}} src={oper} alt=""/></NavLink>
+                                    <div className="exams--text__aptis--for__hello--it__fff">
+                                       <NavLink to="/paper"> <img src={fff} alt=""/></NavLink>
+                                    </div>
                                     </div>
                                     <div className="exams--text__aptis--for__hello--nomer">
                                         <button>other exams</button>

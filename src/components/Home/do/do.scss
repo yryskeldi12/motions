@@ -85,3 +85,54 @@
     }
   }
 }
+@media (max-width: 1440px) {
+  .container{
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  #do .do--title img {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  #do .do--title h1{
+    font-size: 38px;
+    font-weight: 500;
+  }
+  #do .do--title h2{
+    width: 711px;
+    height: 51px;
+    font-size: 27px;
+    font-weight: 500;
+  }
+  #do .do--title p{
+    width: 842px;
+    height: 50.915px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  #do .do--title h3{
+    width: 626.955px;
+    height: 50.855px;
+    font-size: 27px;
+    font-weight: 500;
+  }
+  #do .do--title h4{
+    width: 312.718px;
+    height: 44.023px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  #do .do--title p{
+    width: 841px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  #do .do--title h6{
+    width: 841px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+}

@@ -2,10 +2,12 @@
 
   h2 {
     text-align: center;
-    color: #212121;
-    font-size: 34px;
-    font-weight: 500;
-    padding: 100px 0;
+    color: var(--text-212121, #212121);
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 14% 0 7% 0;
   }
   .youtube {
     display: flex;

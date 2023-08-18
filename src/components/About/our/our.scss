@@ -1,5 +1,6 @@
 #our{
   .our{
+    padding: 10% 0 0 0;
     &--text{
       h1{
         width: 238px;
@@ -7,7 +8,7 @@
         color: var(--text-212121, #212121);
         font-size: 48px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         line-height: normal;
         text-transform: capitalize;
       }
@@ -18,7 +19,7 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          margin-top: 130px;
+          margin-top: 120px;
           &__fotos{
             display: flex;
             width: 315px;
@@ -52,19 +53,19 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          margin-top: 78px;
-          margin-bottom: 213px;
+          margin-top: 70px;
+          margin-bottom: 203px;
           &__fotos{
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 5px 8px 24px 0 rgba(0, 0, 0, 0.10);
+            background: #FFF;
+            gap: 28px;
             width: 315px;
             height: 419px;
             padding-bottom: 0;
-            flex-direction: column;
-            align-items: center;
-            gap: 28px;
-            border-radius: 8px;
-            background: #FFF;
-            box-shadow: 5px 8px 24px 0 rgba(0, 0, 0, 0.10);
             h1{
               margin: -10px 0 -15px 0;
               color: #000;
