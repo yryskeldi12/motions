@@ -2,6 +2,7 @@ import React from "react";
 import "../Country/index.scss"
 import {CiLocationOn} from "react-icons/ci"
 import {data, data2} from "../../../../Header/FaceBac";
+import {NavLink} from "react-router-dom";
 
 const Country = () => {
     return (
@@ -38,7 +39,7 @@ const Country = () => {
                             <img src={el.img} alt="img" />
                             <div className="country--one">
                                 <h4>Name:</h4>
-                                <h3>{el.name}</h3>
+                                <NavLink to='/tabs'><h3>{el.name}</h3></NavLink>
                             </div>
                             <div className="country--one">
                                 <h4>Location <CiLocationOn/></h4>
@@ -51,25 +52,25 @@ const Country = () => {
                         </div>
                     ))
                 }
-                {
-                    data2.map(el => (
-                        <div className="country">
-                            <img src={el.img} alt="img" />
-                            <div className="country--one">
-                                <h4>Name:</h4>
-                                <h3>{el.name}</h3>
-                            </div>
-                            <div className="country--one">
-                                <h4>Location <CiLocationOn/></h4>
-                                <h5>{el.Location}</h5>
-                            </div>
-                            <div className="country--one">
-                                <h4>Age:</h4>
-                                <h5>{el.age}</h5>
-                            </div>
-                        </div>
-                    ))
-                }
+                {/*{*/}
+                {/*    data2.map(el => (*/}
+                {/*        <div className="country">*/}
+                {/*            <img src={el.img} alt="img" />*/}
+                {/*            <div className="country--one">*/}
+                {/*                <h4>Name:</h4>*/}
+                {/*                <h3>{el.name}</h3>*/}
+                {/*            </div>*/}
+                {/*            <div className="country--one">*/}
+                {/*                <h4>Location <CiLocationOn/></h4>*/}
+                {/*                <h5>{el.Location}</h5>*/}
+                {/*            </div>*/}
+                {/*            <div className="country--one">*/}
+                {/*                <h4>Age:</h4>*/}
+                {/*                <h5>{el.age}</h5>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    ))*/}
+                {/*}*/}
             </div>
         </section>
     );
