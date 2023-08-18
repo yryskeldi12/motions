@@ -1,5 +1,10 @@
 import React from 'react';
 import './home.scss'
+import Youtube from "./YouTube/youtube";
+const Home = () => {
+    return (
+        <div>
+            <Youtube/>
 import Hero from "./Hero/hero";
 import Block from "./block/block";
 import Exams from "./Exams/exams";
@@ -12,7 +17,6 @@ const Home = () => {
             <Block/>
             <Exams/>
             <Youtube/>
-            <Message/>
         </div>
     );
 };
