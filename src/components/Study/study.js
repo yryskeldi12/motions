@@ -1,9 +1,12 @@
 import React from 'react';
 import './study.scss'
+import Abroad from "./Abroad/abroad";
+
+
 const Study = () => {
     return (
         <div>
-            <h1>study</h1>
+            <Abroad/>
         </div>
     );
 };

@@ -1,9 +1,10 @@
 import React from 'react';
 import './home.scss'
+import Youtube from "./YouTube/youtube";
 const Home = () => {
     return (
         <div>
-            <h1>home</h1>
+            <Youtube/>
         </div>
     );
 };
