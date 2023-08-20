@@ -102,3 +102,135 @@
     }
   }
 }
+@media (max-width: 1440px) {
+  .container{
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  #what .what--title img {
+    width: 100%;
+  }
+  #what .what--title h6 {
+    margin-bottom: 60px;
+    width: 1068px;
+  }
+  
+}
+@media (max-width: 1024px) {
+  #what .what--title h1{
+    font-size: 38px;
+    font-weight: 500;
+  }
+  #what .what--title h2{
+    font-size: 27px;
+    font-weight: 500;
+  }
+  #what .what--title p{
+    width: 842px;
+    height: 47px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+
+  #what .what--title__list li{
+    width: 104px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  #what .what--title h3{
+    font-size: 27px;
+    font-weight: 500;
+  }
+  #what .what--title h6{
+    width: 833.986px;
+    height: 108.719px;
+    color: #010D39;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20.027px;
+  }
+}
+@media (max-width: 768px) {
+  
+  #what .what--title p {
+    width: 665px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 576px) {
+  #what .what--title p {
+    width: 500px;
+    margin-bottom: 50px;
+  }
+  #what .what--title h6 {
+    width: 509.986px;
+    margin-bottom: 95px;
+  }
+
+}
+@media (max-width: 450px) {
+  #what .what--title p {
+    width: 393px;
+    margin-bottom: 68px;
+  }
+  #what .what--title h6 {
+    width: 392.986px;
+    margin-bottom: 140px;
+  }
+}
+@media (max-width: 400px) {
+  #what .what--title h6 {
+    width: 353.986px;
+    margin-bottom: 160px;
+  }
+  #what .what--title p {
+    width: 312px;
+    margin-bottom: 68px;
+  }
+}
+@media (max-width: 376px) {
+  #what .what--title h1{
+    width: 259px;
+    font-size: 28px;
+    font-weight: 500;
+  }
+  #what .what--title h2{
+    width: 305px;
+    height: 47px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  #what .what--title p{
+    width: 334px;
+    height: 126px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  #what .what--title h3{
+    width: 224px;
+    height: 27px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  #what .what--title h6{
+    width: 334px;
+    height: 404px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 320px) {
+  #what .what--title p {
+    width: 251px;
+    margin-bottom: 52px;
+  }
+  #what .what--title h6 {
+    width: 283px;
+    margin-bottom: 33px;
+  }
+}
