@@ -1,15 +1,16 @@
 import React from "react";
-import "../Country/index.scss"
+import './index.scss'
 import {CiLocationOn} from "react-icons/ci"
-import {data, data2} from "../../../../Header/FaceBac";
 import {NavLink} from "react-router-dom";
+import {britan} from "../index";
 
-const Country = () => {
+
+const Britan = () => {
     return (
-        <section id="country">
+        <section id="britan">
             <div className="container">
                 <h1>United Stated</h1>
-                <div className="country--selects">
+                <div className="britan--selects">
                     <select name="" id="hello1">
                         <option value="#">Higher Education</option>
                         <option value="#">Secondary Education</option>
@@ -34,18 +35,18 @@ const Country = () => {
                     </select>
                 </div>
                 {
-                    data.map(el => (
-                        <div className="country">
+                    britan.map(el => (
+                        <div className="britan">
                             <img src={el.img} alt="img" />
-                            <div className="country--one">
+                            <div className="britan--one">
                                 <h4>Name:</h4>
                                 <NavLink to='/tabs'><h3>{el.name}</h3></NavLink>
                             </div>
-                            <div className="country--one">
+                            <div className="britan--one">
                                 <h4>Location <CiLocationOn/></h4>
                                 <h5>{el.Location}</h5>
                             </div>
-                            <div className="country--one">
+                            <div className="britan--one">
                                 <h4>Age:</h4>
                                 <h5>{el.age}</h5>
                             </div>
@@ -57,4 +58,4 @@ const Country = () => {
     );
 };
 
-export default Country;
+export default Britan;
