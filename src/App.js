@@ -27,7 +27,7 @@ function App() {
         setTimeout(() => {
             setLoad(false)
         }, 3100)
-    }, [])
+    },[])
     return (
         <>
 
@@ -39,7 +39,7 @@ function App() {
             }}>
                 <Header/>
                 {/*<Tabs/>*/}
-                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut dolores eaque eligendi exercitationem explicabo fuga, harum ipsam odit optio pariatur porro, possimus quas quidem recusandae saepe tempora temporibus voluptatibus!</h1>
+                {/* <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut dolores eaque eligendi exercitationem explicabo fuga, harum ipsam odit optio pariatur porro, possimus quas quidem recusandae saepe tempora temporibus voluptatibus!</h1> */}
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/english" element={<English/>}/>

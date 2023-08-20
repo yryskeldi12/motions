@@ -72,7 +72,9 @@
         background: green;
         &--nav{
           margin-top: 45px;
+          font-weight: 400;
           margin-left: 10px;
+          
           .h1{
             margin: 10px 10px ;
             &:hover{
@@ -274,8 +276,80 @@
     background: #E9F3FF;
   }
 }
+@media (max-width: 400px){
+  #header .header--men__div {
+    position: absolute;
+    z-index: -1;
+    margin-left: -349px;
+    margin-top: 20px;
+    width: 401px;
+    height: 452px;
+    border-radius: 4px;
+    background: #E9F3FF;
+}
+#header .header--men__div--nav .h1 {
+  color: black;
+  font-weight: 400;
+  margin: 40px 0 40px 40px ;
 
+}#header .header--men__div--nav .h2 {
+  color: black;
+  font-weight: 400;
+  margin: 40px 0 40px 40px ;
 
+}#header .header--men__div--nav .h3 {
+  color: black;
+  font-weight: 400;
+  margin: 40px 0 40px 40px ;
+
+}#header .header--men__div--nav .h4 {
+  color: black;
+  font-weight: 400;
+  margin: 40px 0 40px 40px ;
+
+}
+#header .header--men__div--nav__color{
+  display: flex;
+    justify-content: space-around;
+    width: 135px;
+    font-size: 23px;
+    margin-left: 30px;
+}
+#header .header--men__div--nav__icons{
+    font-size: 44px;
+    margin-top: 37px;
+    display: flex;
+    justify-content: space-around;
+    width: 315px;
+    margin-left: 23px;
+}
+#header .header--men__div--nav__icons--lol{
+  font-size: 54px;
+  margin: -3px 2px 0 -9px;
+}
+}
+@media (max-width: 320px) {
+  #header .header--men__div {
+    position: absolute;
+    z-index: -1;
+    margin-left: -273px;
+    margin-top: 20px;
+    width: 320px;
+    height: 452px;
+    border-radius: 4px;
+    background: #E9F3FF;
+}
+
+#header .header--men__div--nav__icons {
+  font-size: 44px;
+  margin-top: 37px;
+  display: flex;
+  justify-content: space-around;
+  width: 280px;
+  margin-left: 23px;
+}
+}
+  
 
 
 
