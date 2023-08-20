@@ -73,17 +73,17 @@
     }
     &--right {
       margin: -175px 0 0 -81px;
-      width: 370px;
+      width: 350px;
       height: 370px;
       flex-shrink: 0;
       border: 3px solid var(--text-212121, #212121);
       opacity: 8;
       &__img{
         img {
-          width: 21%;
-          height: 50%;
-          left: 295px;
-          top: 485px;
+          width: 25%;
+          height: 60%;
+          left: 85px;
+          top: 495px;
           position: absolute;
         }
       }
