@@ -14,9 +14,24 @@ import English from "./components/Home/english/english";
 import Do from "./components/Home/do/do";
 import What from "./components/Home/what/what";
 import Paper from "./components/Home/paper/paper";
+import {TbMassage} from "react-icons/tb";
+import Choose from "./components/Study/Abroad/Choose";
 import Tabs from "./components/Tabs/tabs";
 import Choose from "./components/Study/Abroad/Choose";
 import University from "./components/Home/university/university";
+import Germany from "./components/Header/FaceBac/germany/germany";
+import Austria from "./components/Header/FaceBac/Austria/Austria";
+import Britan from "./components/Header/FaceBac/Britan/britan";
+import Canada from "./components/Header/FaceBac/Canada/canada";
+import China from "./components/Header/FaceBac/China/china";
+import Cyrpus from "./components/Header/FaceBac/Cyrpus/cyrpus";
+import Holland from "./components/Header/FaceBac/Holland/holland";
+import Italy from "./components/Header/FaceBac/Italy/italy";
+import Latvia from "./components/Header/FaceBac/Latvia/latvia";
+import Spain from "./components/Header/FaceBac/Spain/spain";
+import Ireland from "./components/Header/FaceBac/Ireland/ireland";
+
+
 
 function App() {
     const [load, setLoad] = useState(true)
@@ -50,6 +65,17 @@ function App() {
                     <Route path="/contacts" element={<Contacts/>}/>
                     <Route path="/choose" element={<Choose/>}/>
                     <Route path="/country" element={<Country/>}/>
+                    <Route path="/germany" element={<Germany/>}/>
+                    <Route path="/austria" element={<Austria/>}/>
+                    <Route path="/britan" element={<Britan/>}/>
+                    <Route path="/canada" element={<Canada/>}/>
+                    <Route path="/china" element={<China/>}/>
+                    <Route path="/holland" element={<Holland/>}/>
+                    <Route path="/italy" element={<Italy/>}/>
+                    <Route path="/latvia" element={<Latvia/>}/>
+                    <Route path="/ireland" element={<Ireland/>}/>
+                    <Route path="/spain" element={<Spain/>}/>
+                    <Route path="/cyrpus" element={<Cyrpus/>}/>
                     <Route path="/tabs" element={<Tabs/>}/>
                 </Routes>
                 <Footer/>

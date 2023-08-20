@@ -59,67 +59,67 @@ const Flag = () => {
                             </div>
                         </Link>
 
-                        <Link to={"/country"}>
+                        <Link to={"/britan"}>
                             <div className="flag--block__one">
                                 <img src={greatBritan} alt="img" />
                                 <h2>Great Britain</h2>
                             </div>
                         </Link>
-                        <Link to={"/country"}>
+                        <Link to={"/austria"}>
                             <div className="flag--block__one">
                                 <img src={austria} alt="img" />
                                 <h2>Austria</h2>
                             </div>
                         </Link>
-                         <Link to={"/country"}>
+                         <Link to={"/germany"}>
                             <div className="flag--block__one">
                                 <img src={germany} alt="img" />
                                 <h2>germany</h2>
                             </div>
                         </Link>
-                        <Link to={"/country"}>
+                        <Link to={"/holland"}>
                             <div className="flag--block__one">
                                 <img src={holland} alt="img" />
                                 <h2>Holland</h2>
                             </div>
                         </Link>
-                        <Link to={"/country"}>
+                        <Link to={"/ireland"}>
                             <div className="flag--block__one">
                                 <img src={ireland} alt="img" />
                                 <h2>Ireland</h2>
                             </div>
                         </Link>
-                        <Link to={"/country"}>
+                        <Link to={"/spain"}>
                             <div className="flag--block__one">
                                 <img src={spain} alt="img" />
                                 <h2>Spain</h2>
                             </div>
                         </Link>
-                        <Link to={"/country"}>
+                        <Link to={"/italy"}>
                             <div className="flag--block__one">
                                 <img src={italy} alt="img" />
                                 <h2>Italy</h2>
                             </div>
                         </Link>
-                        <Link to={"/country"}>
+                        <Link to={"/canada"}>
                             <div className="flag--block__one">
                                 <img src={canada} alt="img" />
                                 <h2>Canada</h2>
                             </div>
                         </Link>
-                         <Link to={"/country"}>
+                         <Link to={"/cyprus"}>
                             <div className="flag--block__one">
                                 <img src={cyprus} alt="img" />
                                 <h2>Cyprus</h2>
                             </div>
                         </Link>
-                        <Link to={"/country"}>
+                        <Link to={"/china"}>
                             <div className="flag--block__one">
                                 <img src={China} alt="img" />
                                 <h2>China</h2>
                             </div>
                         </Link>
-                        <Link to={"/country"}>
+                        <Link to={"/latvia"}>
                             <div className="flag--block__one">
                                 <img src={latvia} alt="img" />
                                 <h2>Latvia</h2>
