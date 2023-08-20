@@ -112,24 +112,3 @@
   }
 }
 
-@media (max-width: 1440px) {
-  .container{
-    width: 90%;
-  }
-}
-@media (max-width: 1200px) {
-  #header .header--title {
-    margin: 0 0 0 100px;
-  }
-}
-@media (max-width: 768px) {
-  #header .header--search input{
-    display: none;
-  }
-  #header .header--search p{
-    display: none;
-  }
-  #header .header--title h3 {
-    margin: 0 17px;
-  }
-}

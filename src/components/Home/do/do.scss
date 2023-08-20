@@ -136,3 +136,133 @@
   }
 
 }
+@media (max-width: 768px) {
+  #do .do--title p {
+    width: 692px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  #do .do--title h6 {
+    width: 695px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+@media (max-width: 576px) {
+  #do .do--title h1 {
+    font-size: 30px;
+  }
+  #do .do--title h2 {
+    font-size: 24px;
+  }
+  #do .do--title h3 {
+    font-size: 24px;
+  }
+  #do .do--title h4 {
+    font-size: 22px;
+  }
+  #do .do--title p {
+    width: 523px;
+    margin: 0 0 45px 0;
+  }
+  #do .do--title h6 {
+    width: 524px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  #do .do--title li {
+    height: 24px;
+    justify-content: center;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 15px 16px;
+  }
+  
+}
+@media (max-width: 450px) {
+  #do .do--title h1 {
+    font-size: 27px;
+  }
+  #do .do--title h2 {
+    font-size: 19px;
+  }
+  #do .do--title p {
+    width: 390px;
+    margin: 0 0 73px 0;
+  }
+  #do .do--title h4 {
+    font-size: 18px;
+  }
+  #do .do--title h6 {
+    width: 402px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  #do .do--title h3 {
+    font-size: 19px;
+  }
+  #do .do--title li {
+    height: 24px;
+    justify-content: center;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 12px 13px;
+  }
+}
+@media (max-width:400px) {
+  #do .do--title h1 {
+    font-size: 25px;
+  }
+  #do .do--title__tome {
+    width: 93px;
+  }
+  #do .do--title img {
+    margin: 40px 0 38px 0;
+  }
+  #do .do--title h2 {
+    width: 374px;
+    margin-bottom: 15px;
+  }
+  #do .do--title h6 {
+    width: 372px;
+  }
+  #do .do--title p {
+    width: 357px;
+    margin: 0 0 90px 0;
+  }
+
+}
+@media (max-width: 376px) {
+  #do .do--title p {
+    width: 323px;
+    margin: 0 0 105px 0;
+  }
+  #do .do--title h6 {
+    width: 341px;
+  }
+  #do .do--title h3 {
+    width: 338px;
+  }
+}
+@media (max-width: 320px) {
+  #do .do--title h1 {
+    font-size: 22px;
+  }
+  #do .do--title h2 {
+    width: 291px;
+    font-size: 17px;
+  }
+  #do .do--title p {
+    width: 284px;
+    margin: 0 0 122px 0;
+  }
+  #do .do--title h6 {
+    width: 289px;
+  }
+  #do .do--title h3 {
+    font-size: 17px;
+    width: 308px;
+  }
+}

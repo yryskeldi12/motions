@@ -9,31 +9,15 @@ import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
 import Flag from "./components/Study/Abroad/Choose/Flag";
 import Country from "./components/Study/Abroad/Choose/Country";
-
-
-
-function App() {
-    return (
-        <div className="App">
-            <Header/>
-            <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/about" element={<About/>}/>
-                <Route path="/study" element={<Study/>}/>
-                <Route path="/choose" element={<Flag/>}/>
-                <Route path="/choose" element={<Flag/>}/>
-                <Route path="/contacts" element={<Contacts/>}/>
-                <Route path="/country" element={<Country/>}/>
-            </Routes>
-            <Footer/>
-        </div>
-    );
-import Loading from "./components/loading/loading";
 import English from "./components/Home/english/english";
 import Do from "./components/Home/do/do";
 import What from "./components/Home/what/what";
 import Paper from "./components/Home/paper/paper";
+import {TbMassage} from "react-icons/tb";
+import Choose from "./components/Study/Abroad/Choose";
 import Tabs from "./components/Tabs/tabs";
+
+
 
 function App() {
     const [load, setLoad] = useState(true)
@@ -65,6 +49,9 @@ function App() {
         <Route path="/about" element={<About />}/>
         <Route path="/study" element={<Study />}/>
         <Route path="/contacts" element={<Contacts />}/>
+        <Route path="/choose" element={<Choose />}/>
+        <Route path="/country" element={<Country />}/>
+        {/*<Route path="/tabs" element={<Tabs />}/>*/}
       </Routes>
         <Footer/>
     </div>
