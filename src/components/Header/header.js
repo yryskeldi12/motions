@@ -30,10 +30,10 @@ const Header = () => {
                     <NavLink to={'/'}><img src={motion} alt=""/></NavLink>
 
                     <nav className="header--title">
-                       <div onClick={() => setBurger(true)}> <NavLink to={"/"}><h3 className='h3'>Home</h3></NavLink></div>
-                       <div onClick={() => setBurger(true)}> <NavLink to={"/about"}><h3 className='h3'>About Us</h3></NavLink></div>
-                       <div onClick={() => setBurger(true)}> <NavLink to={"/study"}><h3 className='h3'>Study Abroad</h3></NavLink></div>
-                       <div onClick={() => setBurger(true)}> <NavLink to={"/contacts"}><h3 className='h3'>Contacts</h3></NavLink></div>
+                        <div onClick={() => setBurger(true)}> <NavLink to={"/"}><h3 className='h3'>Home</h3></NavLink></div>
+                        <div onClick={() => setBurger(true)}> <NavLink to={"/about"}><h3 className='h3'>About Us</h3></NavLink></div>
+                        <div onClick={() => setBurger(true)}> <NavLink to={"/study"}><h3 className='h3'>Study Abroad</h3></NavLink></div>
+                        <div onClick={() => setBurger(true)}> <NavLink to={"/contacts"}><h3 className='h3'>Contacts</h3></NavLink></div>
                     </nav>
 
 
@@ -71,28 +71,30 @@ const Header = () => {
                                 <NavLink to={"/study"}><h4 className='h3'>Study Abroad</h4></NavLink>
                                 <NavLink to={"/contacts"}><h4  className='h4'>Contacts</h4></NavLink>
                                 {/* <div style={{display:'flex' , justifyContent:'space-between' , width:'94px',marginTop:'10px',fontSize:'20px', marginLeft:'10px'}} > */}
-                                <div className='header--men__div--nav__color' >
-                                    <h5 style={{color:color === 1 ? 'black' : '#7E7B7B' , cursor:"pointer" , borderBottom:color === 1 ? '2px solid #5609BB' : ''}} onClick={() => setColor(1)}>EN</h5>
-                                    <h5 style={{color:color === 2 ? 'black' : '#7E7B7B' , cursor:"pointer" , borderBottom:color === 2 ? '2px solid #5609BB' : ''}} onClick={() => setColor(2)}>RU</h5>
-                                    <h5 style={{color:color === 3 ? 'black' : '#7E7B7B' , cursor:"pointer" , borderBottom:color === 3 ? '2px solid #5609BB' : ''}} onClick={() => setColor(3)}>KG</h5>
-                                </div>
-                                <div className='header--men__div--nav__icons'>
-                                    <FaTelegramPlane/>
-                                    <AiFillInstagram/>
-                                    <FaPhoneVolume/>
-                                    <CgMail className='header--men__div--nav__icons--lol'/>
-                                </div>
-                                
+                                <div className='header--mendiv--navcolor' >
+                                    <h5 style={{color:color === 1 ? 'black' : '#7E7B7B' , cursor:"pointer" , borderBottom:color === 1 ? '2px solid #5609BB' : ''}}
 
-
-
-                            </nav>
+                                    onClick={() => setColor(1)}>EN</h5>
+                                <h5 style={{color:color === 2 ? 'black' : '#7E7B7B' , cursor:"pointer" , borderBottom:color === 2 ? '2px solid #5609BB' : ''}} onClick={() => setColor(2)}>RU</h5>
+                                <h5 style={{color:color === 3 ? 'black' : '#7E7B7B' , cursor:"pointer" , borderBottom:color === 3 ? '2px solid #5609BB' : ''}} onClick={() => setColor(3)}>KG</h5>
                         </div>
-                    </div>
+                        <div className='header--mendiv--navicons'>
+                            <FaTelegramPlane/>
+                            <AiFillInstagram/>
+                            <FaPhoneVolume/>
+                            <CgMail className='header--mendiv--navicons--lol'/>
+                        </div>
+
+
+
+
+                    </nav>
                 </div>
             </div>
         </div>
-    );
+</div>
+</div>
+);
 };
 
 export default Header;
