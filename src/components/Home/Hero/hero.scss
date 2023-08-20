@@ -350,17 +350,18 @@ background: linear-gradient(133deg, rgba(241,23,104,0.40379901960784315) 5%, rgb
       grid-template-columns: 1fr;
 
       &-search {
-        display: block;
-        width: 100%;
+        display: none;
 
         input {
-          width: 100%;
-          padding: 16px 0 16px 38px;
+          display: none;
         }
       }
       &-desc {
-        padding: 38px 0 55px 0;
+        padding: 0 0 55px 0;
         width: 100%;
+        video{
+          display: none;
+        }
 
         &_subtitle {
           font-size: 18px;
@@ -430,7 +431,17 @@ background: linear-gradient(133deg, rgba(241,23,104,0.40379901960784315) 5%, rgb
 
 @media (max-width: 768px) {
   #hero {
+    margin: 80px 0 124px 0;
     .hero {
+      &-search {
+        display: block;
+
+        input {
+          display: block;
+        }}
+      &-desc{
+        padding: 40px 0 60px 0;
+      }
       &-block {
         &_lg-img {
           width: 290px;
@@ -575,6 +586,13 @@ background: linear-gradient(133deg, rgba(241,23,104,0.40379901960784315) 5%, rgb
 }
 
 @media (max-width: 450px){
+  #hero .hero-block {
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 392px;
+    margin: 0 auto;
+  }
   #hero .hero-contact{
     display: none;
   }
@@ -597,13 +615,7 @@ background: linear-gradient(133deg, rgba(241,23,104,0.40379901960784315) 5%, rgb
   width: 72%;
   font-size: 16px;
 }
-#hero .hero-block {
-  width: 75%;
-  top: -148px;
-  left: -72px;
-  height: 392px;
-  margin: 0 auto;
-}
+
 #hero .hero-block .sm-1 {
   top: 24px;
   width: 116px;
@@ -658,13 +670,13 @@ background: linear-gradient(133deg, rgba(241,23,104,0.40379901960784315) 5%, rgb
   width: 63%;
   font-size: 14px;
 }
-#hero .hero-block {
-  width: 65%;
-  top: -148px;
-  left: -95px;
-  height: 364px;
-  margin: 0 auto;
-}
+  #hero .hero-block {
+    width: 90%;
+    top: 0;
+    left: 0;
+    height: 364px;
+    margin: 0 auto;
+  }
 hero .hero-block {
   width: 65%;
   top: -148px;
@@ -718,13 +730,13 @@ hero .hero-block .lg-1 {
   width: 55%;
   font-size: 12px;
 }
-#hero .hero-block {
-  width: 62%;
-  top: -148px;
-  left: -103px;
-  height: 332px;
-  margin: 0 auto;
-}
+  #hero .hero-block {
+    width: 90%;
+    top: 0;
+    left: 0;
+    height: 332px;
+    margin: 0 auto;
+  }
 #hero .hero-block .lg-1 {
   height: 175px;
   width: 175px;
@@ -761,13 +773,13 @@ hero .hero-block .lg-1 {
   width: 51%;
   font-size: 11px;
 }
-#hero .hero-block {
-  width: 51%;
-  top: -148px;
-  left: -130px;
-  height: 282px;
-  margin: 0 auto;
-}
+  #hero .hero-block {
+    width: 90%;
+    top: 0;
+    left: 0;
+    height: 282px;
+    margin: 0 auto;
+  }
 #hero .hero-block .sm-1 {
   top: 6px;
   width: 80px;

@@ -16,6 +16,7 @@ import What from "./components/Home/what/what";
 import Paper from "./components/Home/paper/paper";
 // import {TbMassage} from "react-icons/tb";
 // import Choose from "./components/Study/Abroad/Choose";
+import {TbMassage} from "react-icons/tb";
 import Tabs from "./components/Tabs/tabs";
 import Choose from "./components/Study/Abroad/Choose";
 import University from "./components/Home/university/university";
