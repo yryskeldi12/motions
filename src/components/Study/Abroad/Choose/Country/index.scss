@@ -28,6 +28,7 @@
     }
 
     &--one {
+      
 
       h4 {
         color: #b5b5b5;
@@ -66,6 +67,8 @@
         border: none;
         margin-left: -25px;
 
+        
+
         select {
           cursor: pointer;
           outline: none;
@@ -86,6 +89,7 @@
           margin: 0 0 0 55px;
         }
       }
+
     }
   }
 }
@@ -109,4 +113,25 @@
   border: none;
   outline: none;
   margin: 0 10px;
+}
+
+.pagination1 {
+  button {
+    width: 80px;
+    height: 40px;
+    margin: 0 10px;
+    background: #1aa2ee;
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+
+    &:hover {
+      background: #fff;
+      color: #1aa2ee;
+      transition: .4s;
+      border: 2px solid #1aa2ee;
+    }
+
+  }
 }

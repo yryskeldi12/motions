@@ -9,14 +9,17 @@
     line-height: normal;
     padding: 14% 0 7% 0;
   }
+
   .youtube {
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow-x: scroll;
+
     &::-webkit-scrollbar {
       display: none;
     }
+
     iframe {
       width: 490px;
       height: 300px;
@@ -25,4 +28,122 @@
       background: lightgray 50% / cover no-repeat, #A96565;
     }
   }
+}
+
+////////////////////////
+
+
+@media(max-width:1200px) {
+  #youtube {
+
+    h2 {}
+
+    .youtube {
+      &::-webkit-scrollbar {}
+
+      iframe {
+        width: 465px;
+      }
+    }
+  }
+
+}
+
+
+@media(max-width:992px) {
+  #youtube {
+
+    h2 {}
+
+    .youtube {
+      &::-webkit-scrollbar {}
+
+      iframe {
+        width: 420px;
+        height: 266px;
+      }
+    }
+  }
+
+}
+
+@media(max-width:768px) {
+  #youtube {
+
+    h2 {
+      font-size: 36px;
+    }
+
+    .youtube {
+      &::-webkit-scrollbar {}
+
+      iframe {
+        width: 420px;
+        height: 266px;
+      }
+    }
+  }
+
+}
+
+@media(max-width:576px) {
+  #youtube {
+
+    h2 {
+      font-size: 28px;
+    }
+
+    .youtube {
+      &::-webkit-scrollbar {}
+
+      iframe {
+        width: 393px;
+        height: 238px;
+      }
+    }
+  }
+
+}
+
+
+@media(max-width:450px) {
+  #youtube {
+
+    h2 {
+      font-size: 24px;
+    }
+
+    .youtube {
+      &::-webkit-scrollbar {}
+
+      iframe {
+        width: 286px;
+        height: 170px;
+
+      }
+    }
+  }
+
+}
+
+
+
+@media(max-width:400px) {
+  #youtube {
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .youtube {
+      &::-webkit-scrollbar {}
+
+      iframe {
+        width: 266px;
+        height: 160px;
+
+      }
+    }
+  }
+
 }
