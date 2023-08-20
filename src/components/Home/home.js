@@ -5,6 +5,8 @@ import Hero from "./Hero/hero";
 import Block from "./block/block";
 import Exams from "./Exams/exams";
 import Message from "./Message";
+
+
 const Home = () => {
     return (
         <div>
