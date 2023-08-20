@@ -174,3 +174,214 @@
     }
   }
 }
+
+@media (max-width: 1440px) {
+  .container{
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  #paper .paper--title img{
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  #paper .paper--title h1{
+    font-size: 38px;
+    font-weight: 500;
+  }
+  #paper .paper--title h2{
+    font-size: 27px;
+    font-weight: 500;
+  }
+  #paper .paper--title section{
+    width: 848px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21.43px;
+  }
+  #paper .paper--title h3{
+    width: 253.897px;
+    font-size: 27px;
+    font-weight: 500;
+  }
+  #paper .paper--title h6 {
+    width: 890px;
+    height: 66px;
+    color: #333;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0 0 0 0;
+  }
+  #paper .paper--title h4{
+    width: 446.701px;
+    font-size: 27px;
+    font-weight: 500;
+  }
+  #paper .paper--title h5 {
+    font-size: 15px;
+    margin: 22px 0 0 0;
+  }
+  #paper .paper--title p{
+    width: 841px;
+    height: 26.63px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px 0 0 0;
+  }
+}
+@media (max-width: 768px) {
+  #paper .paper--title section {
+    width: 699px;
+  }
+  #paper .paper--title p {
+    width: 652px;
+    height: 26.63px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 20px 0 0 20px;
+  }
+  #paper .paper--title h5 {
+    margin: 22px 0 0 20px;
+  }
+  #paper .paper--title h6 {
+    margin: 0 0 0 20px;
+    width: 650px;
+  }
+}
+@media (max-width: 576px) {
+  #paper .paper--title section {
+    width: 510px;
+  }
+  #paper .paper--title p {
+    width: 496px;
+    margin: 20px 0 0 20px;
+  }
+  #paper .paper--title h5 {
+    margin: 43px 0 0 20px;
+  }
+  #paper .paper--title h6 {
+    margin: 0px 0 24px 20px;
+    width: 464px;
+  }
+  #paper .paper--title h4 {
+    margin: 60px 0 20px 0;
+  }
+}
+@media (max-width: 450px) {
+  #paper .paper--title section {
+    width: 395px;
+  }
+  #paper .paper--title p {
+    width: 373px;
+    margin: 48px 0 0px 20px;
+  }
+  #paper .paper--title h5 {
+    margin: 59px 0 -37px 20px;
+  }
+  #paper .paper--title h6 {
+    margin: 0px 0 24px 20px;
+    width: 354px;
+  }
+  #paper .paper--title h4 {
+    margin: 90px 0 20px 0;
+  }
+}
+@media (max-width: 400px) {
+  #paper .paper--title section {
+    width: 353px;
+  }
+  #paper .paper--title p {
+    width: 327px;
+    margin: 48px 0 0px 20px;
+  }
+}
+@media (max-width: 376px) {
+  #paper .paper--title h1{
+    width: 172px;
+    font-size: 28px;
+    font-weight: 500;
+  }
+  #paper .paper--title__tome {
+    width: 67px;
+  }
+  #paper .paper--title h2{
+    width: 274px;
+    height: 26px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  #paper .paper--title section{
+    width: 334px;
+    height: 92px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  #paper .paper--title p {
+    width: 313px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 65px 0 0px 20px;
+  }
+  #paper .paper--title h3{
+    width: 274px;
+    height: 26px;
+    font-size: 20px;
+    margin-top: 70px;
+    font-weight: 500;
+  }
+  #paper .paper--title h6{
+    width: 334px;
+    height: 128px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 ;
+  }
+  #paper .paper--title h6::before{
+    display: none;
+  }
+  #paper .paper--title h4{
+    width: 275px;
+    height: 51px;
+    color: #002AC0;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 90px 0 -86px 0;
+  }
+  #paper .paper--title h5 {
+    font-size: 18px;
+    margin: 105px 0 -50px 20px;
+  }
+}
+@media (max-width: 320px) {
+  #paper .paper--title section {
+    width: 278px;
+  }
+  #paper .paper--title p {
+    width: 251px;
+  }
+  #paper .paper--title h5 {
+    font-size: 18px;
+    margin: 115px 0 -50px 20px;
+  }
+  #paper .paper--title h6 {
+    width: 267px;
+    height: 128px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+  }
+  #paper .paper--title h4 {
+    margin: 27px 0 -86px 0;
+  }
+  #paper .paper--title h3 {
+    margin: 90px 0 0 0;
+  }
+  #paper .paper--title img {
+    margin: 39px 0 37px 0;
+  }
+}

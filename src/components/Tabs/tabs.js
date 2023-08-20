@@ -118,7 +118,7 @@ const Tabs = () => {
                                 <div className="tabs--content__active--nikes__cat">
                                     <img src={calendar} alt=""/>
                                     <div className="tabs--content__active--nikes__cat--cast">
-                                        <h5>Application deadline></h5>
+                                        <h5>Application deadline</h5>
                                         <h6>31 Aug 2023, 23:59:59Eastern European Time</h6>
                                         <p>Autumn Intake</p>
                                     </div>

@@ -1,0 +1,117 @@
+#italy {
+  padding: 100px 0;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 49px;
+    text-align: left;
+    color: #212121;
+    padding: 50px 0;
+  }
+
+  .italy {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1144px;
+    height: 196px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.05);
+    margin: 30px 0;
+    transition: .3s;
+
+    &:hover {
+      height: 210px;
+      transition: .3s;
+    }
+    img{
+      width: 23%;
+      height: 91%;
+      border-radius: 10px;
+    }
+
+    &--one {
+
+      h4 {
+        color: #b5b5b5;
+        font-family: Montserrat, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin: 0 0 20px 0;
+        display: flex;
+      }
+
+      h3 {
+        color: #1aa2ee;
+        font-family: Gilroy, sans-serif;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+
+      h5 {
+        color: var(--text-212121, #212121);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+
+      &--selects {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        outline: none;
+        border: none;
+        margin-left: -25px;
+
+        select {
+          cursor: pointer;
+          outline: none;
+          border: none;
+          background: #fdfdfd;
+          text-align: center;
+          font-size: 17px;
+
+          option {
+            border: none;
+            outline: none;
+            padding: 20px 300px;
+
+          }
+        }
+
+        &__options {
+          margin: 0 0 0 55px;
+        }
+      }
+    }
+  }
+}
+
+#hello {
+  width: 130px;
+  border: none;
+  outline: none;
+  margin: 0 10px;
+}
+
+#hello1 {
+  width: 150px;
+  border: none;
+  outline: none;
+  margin: 0 10px;
+}
+
+#hello2 {
+  width: 100px;
+  border: none;
+  outline: none;
+  margin: 0 10px;
+}
