@@ -14,6 +14,8 @@ import English from "./components/Home/english/english";
 import Do from "./components/Home/do/do";
 import What from "./components/Home/what/what";
 import Paper from "./components/Home/paper/paper";
+import {TbMassage} from "react-icons/tb";
+import Choose from "./components/Study/Abroad/Choose";
 import Tabs from "./components/Tabs/tabs";
 import Choose from "./components/Study/Abroad/Choose";
 import University from "./components/Home/university/university";
@@ -28,6 +30,8 @@ import Italy from "./components/Header/FaceBac/Italy/italy";
 import Latvia from "./components/Header/FaceBac/Latvia/latvia";
 import Spain from "./components/Header/FaceBac/Spain/spain";
 import Ireland from "./components/Header/FaceBac/Ireland/ireland";
+
+
 
 function App() {
     const [load, setLoad] = useState(true)

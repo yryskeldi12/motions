@@ -102,3 +102,186 @@
     }
   }
 }
+@media (max-width: 1440px) {
+  .container{
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  #english .english--title img{
+    width: 100% ;
+  }
+  #english .english--title h6 {
+    width: 1078px;
+  }
+  #english .english--title__lol p {
+    width: 1041px;
+  }
+}
+@media (max-width: 1024px) {
+  #english .english--title h1{
+    color: #000;
+    font-size: 38px;
+    font-weight: 500;
+  }
+  #english .english--title__tome {
+    width: 110px;
+  }
+  #english .english--title h2{
+    font-size: 27px;
+    font-weight: 500;
+    line-height: normal;
+  }
+  #english .english--title p{
+    width: 842px;
+    height: 47px;
+    color: #010D39;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: capitalize;
+  }
+  #english .english--title__list li{
+    width: 104px;
+    color: #333;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+  #english .english--title h3{
+    color: #002AC0;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+  #english .english--title h6{
+    width: 833.986px;
+    height: 108.719px;
+    color: #010D39;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.027px;
+    text-transform: capitalize;
+  }
+  #english .english--title p{
+    width: 844px;
+    flex-shrink: 0;
+    color: #333;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: capitalize;
+  }
+}
+@media (max-width: 768px) {
+  #english .english--title p {
+    width: 725px;
+  }
+  #english .english--title h6 {
+    width: 657.986px;
+  }
+  #english .english--title p {
+    width: 672px;
+    margin: 22px 0 0 0;
+  }
+}
+@media (max-width: 576px) {
+  #english .english--title h1 {
+    color: #000;
+    font-size: 32px;
+    font-weight: 500;
+  }
+  #english .english--title h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+  }
+  #english .english--title__list{
+    margin: 30px 0 0 0;
+  }
+  #english .english--title h3 {
+    font-size: 24px;
+  }
+  #english .english--title h6 {
+    width: 502.986px;
+    margin-bottom: 100px;
+  }
+  
+  #english .english--title__lol {
+    margin: 0 0 0 22px;
+  }
+  #english .english--title p {
+    width: 503px;
+    margin: 41px 0 0 0;
+  }
+
+}
+@media (max-width: 450px) {
+  #english .english--title p {
+    width: 336px;
+    margin: 83px 0 0 0;
+  }
+  #english .english--title h2 {
+    font-size: 20px;
+    margin-bottom: -56px;
+  }
+  #english .english--title__list {
+    margin: 65px 0 0 0;
+  }
+  #english .english--title h6 {
+    width: 395.986px;
+    margin-bottom: 145px;
+  }
+  #english .english--title h3 {
+    font-size: 21px;
+  }
+  #english .english--title h1 {
+    font-size: 28px;
+  }
+  #english .english--title__tome {
+    width: 83px;
+  }
+}
+@media (max-width: 400px) {
+  #english .english--title h6 {
+    width: 343.986px;
+    margin-bottom: 187px;
+  }
+}
+@media (max-width: 376px) {
+  #english .english--title h6 {
+    width: 326.986px;
+    margin-bottom: 199px;
+  }
+  #english .english--title p {
+    width: 307px;
+    margin: 83px 0 0 0;
+  }
+}
+@media (max-width: 320px) {
+  #english .english--title p {
+    width: 258px;
+    margin: 122px 0 0 0;
+  }
+  #english .english--title__list {
+    margin: 112px 0 0 0;
+  }
+  #english .english--title h6 {
+    width: 274.986px;
+    margin-bottom: 199px;
+  }
+  #english .english--title h6 {
+    width: 274.986px;
+    margin-bottom: 250px;
+  }
+  #english .english--title h2 {
+    font-size: 20px;
+    margin-bottom: -94px;
+  }
+}
