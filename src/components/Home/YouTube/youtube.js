@@ -1,12 +1,22 @@
 import React from 'react';
 import './youtube.scss'
+import {useLanguage} from "../../LanguageFac/LanguageContext";
 
 
 const Youtube = () => {
+    const {language} = useLanguage()
+    const translations = {
+        EN: {
+            yout: "video testimonials from our students",
+        },
+        RU: {
+            yout: "Видеоотзывы наших учеников"
+        }
+    }
     return (
         <div id="youtube">
             <div className="container">
-                <h2>Video testimonials from our students</h2>
+                <h2>{translations[language].yout}</h2>
                 <div className="youtube">
                     <div>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/5hhwccQRRb8"

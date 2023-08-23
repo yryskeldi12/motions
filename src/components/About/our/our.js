@@ -12,14 +12,30 @@ import jh from '../../../../src/Image/jh.svg'
 import kal from '../../../../src/Image/kal.svg'
 import kug from '../../../../src/Image/kug.svg'
 import zub from '../../../..//src/Image/zub.svg'
+import {useLanguage} from "../../LanguageFac/LanguageContext";
 const Our = () => {
+
+    const {language} = useLanguage()
+    const translations = {
+        EN :{
+            our:'Our Team'
+
+        },
+        RU: {
+            our:'Наша команда'
+        }
+    };
+
+
+
+
     return (
         <div id="our">
             <div className="container">
                 <div className="our">
                     <div className="our--text">
                         <center>
-                            <h1>Our Team</h1>
+                            <h1>{translations[language].our}</h1>
                         </center>
                     </div>
                     <div className="our--title">

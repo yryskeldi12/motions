@@ -3,9 +3,13 @@ import './index.scss'
 import {CiLocationOn} from "react-icons/ci"
 import {NavLink} from "react-router-dom";
 import {latvia} from "../index";
+import {useDispatch} from "react-redux";
+import {getPrREC} from "../../../../Store/Reducers/Action";
 
 
 const Latvia = () => {
+    const dispatch = useDispatch()
+
     return (
         <section id="latvia">
             <div className="container">
@@ -36,11 +40,11 @@ const Latvia = () => {
                 </div>
                 {
                     latvia.map(el => (
-                        <div className="latvia">
+                        <div className="latvia" onClick={() => dispatch(getPrREC(el))}>
                             <img src={el.img} alt="img" />
                             <div className="latvia--one">
                                 <h4>Name:</h4>
-                                <NavLink to='/tabs'><h3>{el.name}</h3></NavLink>
+                                <NavLink to="/tabs"><h3>{el.name}</h3></NavLink>
                             </div>
                             <div className="latvia--one">
                                 <h4>Location <CiLocationOn/></h4>

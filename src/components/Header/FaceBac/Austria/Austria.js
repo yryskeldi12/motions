@@ -3,9 +3,13 @@ import './index.scss'
 import {CiLocationOn} from "react-icons/ci"
 import {NavLink} from "react-router-dom";
 import {austria} from "../index";
+import {useDispatch} from "react-redux";
+import {getPrREC} from "../../../../Store/Reducers/Action";
 
 
 const Austria = () => {
+    const dispatch = useDispatch()
+
     return (
         <section id="austria">
             <div className="container">
@@ -36,11 +40,11 @@ const Austria = () => {
                 </div>
                 {
                     austria.map(el => (
-                        <div className="austria">
+                        <div className="austria" onClick={() => dispatch(getPrREC(el))}>
                             <img src={el.img} alt="img" />
                             <div className="austria--one">
                                 <h4>Name:</h4>
-                                <NavLink to='/tabs'><h3>{el.name}</h3></NavLink>
+                                <NavLink to="/tabs"><h3>{el.name}</h3></NavLink>
                             </div>
                             <div className="austria--one">
                                 <h4>Location <CiLocationOn/></h4>

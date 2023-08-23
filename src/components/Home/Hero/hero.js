@@ -10,11 +10,40 @@ import {CiSearch} from "react-icons/ci";
 import {NavLink} from "react-router-dom";
 import video from  '../../../Image/video.webm'
 import OutsideClickHandler from "react-outside-click-handler/esm/OutsideClickHandler";
+import {useLanguage} from "../../LanguageFac/LanguageContext";
+
 
 const Hero = () => {
     const [searchContent, setSearchContent] = useState(false);
+    const {language} = useLanguage()
 
+    const translations = {
+        EN :{
+            title: "Explore the world",
+            name: "Study abroad with our help",
+            title1: "Study at the worlds top universities and expand your horizons. Get the highest quality education and achieve success abroad.",
+            name1: "This Is Why We Are Best From Others",
+            name2:'NAME',
+            phone:'PHONE',
+            enter:'|Enter your name',
+            phone1:'Enter your phone',
+            cont:'Сontact'
+        },
+        RU: {
+            title: "Исследовать мир",
+            name: "Обучение за границей с нашей помощью",
+            title1: "Учитесь в лучших университетах мира и расширяйте свой кругозор. Получите высшее качественное образование и добейтесь успеха за границей.",
+            name1: "Вот почему мы Лучшее от других",
+            name2:'ИМЯ',
+            phone:'ТЕЛЕФОН',
+            enter:'|Введите свое имя',
+            phone1:'Введите свой телефон',
+            cont:'Контакты'
+
+        }
+    };
     return (
+
         <div id="hero">
             <div className="container">
                 <div className="hero">
@@ -38,12 +67,9 @@ const Hero = () => {
                         )}
                     </NavLink>
                     <div className="hero-desc">
-                        <h3 className="hero-desc_subtitle">Explore the world</h3>
-                        <h1 className="hero-desc_title">Study abroad with our help</h1>
-                        <p>
-                            Study at at the world's top universities and expand your horizons.
-                            Get the highest quality education and achieve success abroad.
-                        </p>
+                        <h3 className="hero-desc_subtitle">{translations[language].title}</h3>
+                        <h1 className="hero-desc_title">{translations[language].name}</h1>
+                        <p>{translations[language]?.title1}</p>
                             <video autoPlay loop muted src={video}></video>
 
                     </div>
@@ -73,8 +99,8 @@ const Hero = () => {
                                 <img src={heroContactImg1} alt="" />
                             </div>
                             <div className="hero-contact_group-desc">
-                                <h5>NAME</h5>
-                                <input type="text" placeholder="|Enter your name" />
+                                <h5>{translations[language].name2}</h5>
+                                <input type="text" placeholder={translations[language].enter} />
                             </div>
                         </div>
                         <div className="hero-contact_group">
@@ -82,11 +108,11 @@ const Hero = () => {
                                 <img src={heroContactImg2} alt="" />
                             </div>
                             <div className="hero-contact_group-desc">
-                                <h5>PHONE</h5>
-                                <input type="text" placeholder="Enter your phone" />
+                                <h5>{translations[language].phone}</h5>
+                                <input type="text" placeholder={translations[language].phone1} />
                             </div>
                         </div>
-                        <button className="hero-contact_btn">Сontact</button>
+                        <button className="hero-contact_btn">{translations[language].cont}</button>
                     </div>
                 </div>
             </div>
