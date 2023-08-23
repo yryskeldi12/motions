@@ -12,6 +12,7 @@ import English from "./components/Home/english/english";
 import Do from "./components/Home/do/do";
 import What from "./components/Home/what/what";
 import Paper from "./components/Home/paper/paper";
+import {TbMassage} from "react-icons/tb";
 import Tabs from "./components/Tabs/tabs";
 import Choose from "./components/Study/Abroad/Choose";
 import Germany from "./components/Header/FaceBac/germany/germany";

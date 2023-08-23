@@ -8,7 +8,34 @@ import what from "../../../Image/WhatsApp.svg";
 import ins from "../../../Image/Instagram.svg";
 import teleg from "../../../Image/Telegram.svg";
 import face from "../../../Image/Facebook.svg";
-import {useLanguage} from "../../LanguageFac/LanguageContext";
+import {FiCopy} from "react-icons/fi"
+
+
+const CopyTextButton = ({ textToCopy }) => {
+  const [copied, setCopied] = useState(true);
+
+  const handleCopyClick = () => {
+      const textarea = document.createElement('textarea');
+      textarea.value = textToCopy;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      setCopied(true);
+
+      setTimeout(() => {
+          setCopied(false);
+      }, 150); // Reset the copied state after a short delay
+  };
+
+  return (
+      <div>
+          <button className="message-btn" style={{color:copied ? '#fff' : 'red'}}  onClick={handleCopyClick}>
+              {<FiCopy/>}
+          </button>
+      </div>
+  );
+};
 
 const Message = () => {
   const [send, setSend] = useState(false);
@@ -57,6 +84,10 @@ const Message = () => {
 
     }
   }
+
+  const textToCopy = "+996500554422  motionweb312@gmail.com";
+
+
 
   return (
     <div id="message">
@@ -248,6 +279,7 @@ const Message = () => {
               </h4>
               <h2>motionweb312@gmail.com</h2>
             </div>
+            <CopyTextButton textToCopy={textToCopy} />
           </div>
         </div>
 

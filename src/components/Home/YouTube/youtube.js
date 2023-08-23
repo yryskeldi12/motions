@@ -13,11 +13,33 @@ const Youtube = () => {
             yout: "Видеоотзывы наших учеников"
         }
     }
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+
+
+const Youtube = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
+
+    };
+
     return (
-        <div id="youtube">
+    <div id="youtube">
             <div className="container">
                 <h2>{translations[language].yout}</h2>
                 <div className="youtube">
+                <h2>Video testimonials from our students</h2>
+
+                <Slider{...settings} className="youtube">
                     <div>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/5hhwccQRRb8"
                                 title="YouTube video player" frameBorder="0"
@@ -48,7 +70,8 @@ const Youtube = () => {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowFullScreen></iframe>
                     </div>
-                </div>
+                </Slider>
+
             </div>
         </div>
     );

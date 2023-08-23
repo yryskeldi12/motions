@@ -98,6 +98,17 @@ const Country = () => {
             muzic: "Соединенные Штаты"
         }
     };
+    const itemsPerPage = 5;
+    const [currentPage, setCurrentPage] = useState(1);
+
+    const handlePageChange = (pageNumber) => {
+        setCurrentPage(pageNumber);
+    };
+
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const visibleData = data.slice(startIndex, endIndex);
+
     return (
 
         <section id="country">
@@ -135,6 +146,13 @@ const Country = () => {
                 {visibleData.map((el) => (
                     <div className="country" onClick={() => dispatch(getPrREC(el))}>
                         <img src={el.img} alt="img"/>
+                <h1>United States</h1>
+                <div className="country--selects">
+                    {/* Your dropdown selects code here */}
+                </div>
+                {visibleData.map((el) => (
+                    <div className="country" key={el.name}>
+                        <img src={el.img} alt="img" />
                         <div className="country--one">
                             <h4>Name:</h4>
                             <NavLink to="/tabs">
@@ -148,6 +166,14 @@ const Country = () => {
                             <h5>{el.Location}</h5>
                         </div>
                         <div className="country--one">
+                        </div>
+                        <div className="country--one">
+                            <h4>
+                                Location <CiLocationOn />
+                            </h4>
+                            <h5>{el.Location}</h5>
+                        </div>
+                        <div className="country--one">
                             <h4>Age:</h4>
                             <h5>{el.age}</h5>
                         </div>
@@ -155,6 +181,7 @@ const Country = () => {
                 ))}
                 <div className="pagination">
                     {Array.from({length: Math.ceil(data.length / itemsPerPage)}).map(
+                    {Array.from({ length: Math.ceil(data.length / itemsPerPage) }).map(
                         (item, index) => (
                             <button
                                 key={index}
@@ -162,6 +189,7 @@ const Country = () => {
                                 className={currentPage === index + 1 ? "active" : ""}
                             >
                                 {index + 1}
+                                {/*{index + 1}*/}
                             </button>
                         )
                     )}

@@ -20,6 +20,15 @@ const Tabs = () => {
     const [toggleState, setToggleState] = useState(1);
     const {product} = useSelector(s => s.ProductReducer)
 
+    let hello = 0
+    if (toggleState === 1){
+        hello = 0
+    }else if (toggleState === 2){
+        hello = 415
+    }else if (toggleState === 3){
+        hello = 826
+    }
+    console.log(hello);
     return (
         <div id="tabs">
             <University/>
@@ -27,21 +36,22 @@ const Tabs = () => {
                 <div className="tabs">
                     <div className="tabs--bloc">
                         <div className="tabs--bloc__description"
-                             style={{borderBottom: toggleState === 1 ? "2px solid red" : ''}}
+                            //  style={{borderBottom: toggleState === 1 ? "2px solid red" : ''}}
                              onClick={() => setToggleState(1)}
                         >Description
-                        </div>
+                        </div> 
                         <div className="tabs--bloc__cost"
-                             style={{borderBottom: toggleState === 2 ? "2px solid red" : ''}}
+                            //  style={{borderBottom: toggleState === 2 ? "2px solid red" : ''}}
                              onClick={() => setToggleState(2)}
                         >Cost
                         </div>
                         <div className="tabs--bloc__photo"
-                             style={{borderBottom: toggleState === 3 ? "2px solid red" : ''}}
+                            //  style={{borderBottom: toggleState === 3 ? "2px solid red" : ''}}
                              onClick={() => setToggleState(3)}
                         >Photo
                         </div>
                     </div>
+                    <div style={{marginLeft:`${hello}px`}} className="tabs--block"></div>
                     <div className="tabs--content">
                         <div className="tabs--content__active" style={{display: toggleState === 1 ? 'block' : 'none'}}>
                             <div className="tabs--content__active">
