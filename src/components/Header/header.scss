@@ -21,19 +21,7 @@
       .active {
         position: relative;
 
-        &::before {
-          content: "";
-          position: absolute;
-          width: 8px;
-          height: 8px;
-          background-color: rgba(255, 0, 0, 0.62);
-          border-radius: 50%;
-          bottom: -10px;
-          left: 50%;
-          transform: translateX(-50%);
-          transition: 0.5s;
-        }
-      }
+
 
       h3 {
         margin: 0 25px;
@@ -56,19 +44,7 @@
           opacity: 0; // Start with zero opacity
         }
 
-        &:hover::before {
-          width: 8px; // Adjust the size as needed
-          height: 8px; // Adjust the size as needed
-          background-color: rgba(
-            255,
-            0,
-            0,
-            0.9
-          ); // Adjust the color and opacity as needed
-          opacity: 1; // Fade-in the element on hover
-        }
-      }
-    }
+
 
     &--men {
       display: none;
@@ -110,71 +86,6 @@
             &:hover {
               transition: 4s;
 
-              position: relative;
-              &::before {
-                transition: 4s;
-
-                content: "";
-                position: absolute;
-                width: 8px;
-                height: 8px;
-                background-color: rgba(255, 0, 0, 0.66);
-                border-radius: 50%;
-                left: 90px;
-                top: 50%;
-                transform: translateY(-50%);
-              }
-            }
-          }
-          .h3 {
-            margin: 10px 10px;
-            &:hover {
-              transition: 4s;
-
-              position: relative;
-              &::before {
-                transition: 4s;
-
-                content: "";
-                position: absolute;
-                width: 8px;
-                height: 8px;
-                background-color: rgba(255, 0, 0, 0.66);
-                border-radius: 50%;
-                left: 125px;
-                top: 50%;
-                transform: translateY(-50%);
-              }
-            }
-          }
-          .h4 {
-            margin: 10px 10px;
-            &:hover {
-              transition: 4s;
-
-              position: relative;
-              &::before {
-                transition: 4s;
-
-                content: "";
-                position: absolute;
-                width: 8px;
-                height: 8px;
-                background-color: rgba(255, 0, 0, 0.66);
-                border-radius: 50%;
-                left: 80px;
-                top: 50%;
-                transform: translateY(-50%);
-              }
-            }
-          }
-        }
-      }
-    }
-    &--search {
-      display: flex;
-      align-items: center;
-      position: relative;
 
       p {
         position: absolute;

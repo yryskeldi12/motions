@@ -77,11 +77,6 @@ const Header = () => {
             </div>
           </nav>
            
-
-
-
-
-
           <div className="header--search">
             <p>
               <BsSearch onClick={() => setModal(!modal)} />
