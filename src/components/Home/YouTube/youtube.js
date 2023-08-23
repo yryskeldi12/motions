@@ -1,5 +1,18 @@
 import React from 'react';
 import './youtube.scss'
+import {useLanguage} from "../../LanguageFac/LanguageContext";
+
+
+const Youtube = () => {
+    const {language} = useLanguage()
+    const translations = {
+        EN: {
+            yout: "video testimonials from our students",
+        },
+        RU: {
+            yout: "Видеоотзывы наших учеников"
+        }
+    }
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -22,6 +35,8 @@ const Youtube = () => {
     return (
     <div id="youtube">
             <div className="container">
+                <h2>{translations[language].yout}</h2>
+                <div className="youtube">
                 <h2>Video testimonials from our students</h2>
 
                 <Slider{...settings} className="youtube">

@@ -1,11 +1,13 @@
-#university{
+#university {
   padding: 0 0 148px 0;
-  .university{
+
+  .university {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    &--title{
-      h1{
+
+    &--title {
+      h1 {
         color: #1AA2EE;
         font-size: 40px;
         font-style: normal;
@@ -14,25 +16,30 @@
         text-transform: capitalize;
         margin-bottom: 66px;
       }
-img{
-  width: 614px;
-}
+
+      img {
+        width: 614px;
+      }
     }
-    &--text{
+
+    &--text {
       margin: 120px 0 0 0;
-      &__location{
+
+      &__location {
         padding: 12.9px 98.457px 16.1px 40.543px;
         align-items: center;
         border-radius: 1.843px;
         border: 1px solid #BBB;
-        h1{
+
+        h1 {
           color: var(--text-212121, #212121);
           font-size: 20px;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
           text-transform: capitalize;
-          span{
+
+          span {
             margin: 0 10px 0 0;
             color: rgba(51, 51, 51, 0.50);
             font-size: 20px;
@@ -43,20 +50,23 @@ img{
           }
         }
       }
-      &__date{
+
+      &__date {
         margin: 13px 0 13px 0;
         padding: 12.9px 144.457px 17.1px 40.543px;
         align-items: center;
         border-radius: 1.843px;
         border: 1px solid #BBB;
-        h1{
+
+        h1 {
           color: var(--text-212121, #212121);
           font-size: 20px;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
           text-transform: capitalize;
-          span{
+
+          span {
             color: rgba(51, 51, 51, 0.50);
             font-size: 20px;
             font-weight: 500;
@@ -64,21 +74,24 @@ img{
           }
         }
       }
-      &__type{
+
+      &__type {
         width: 450px;
         height: 85px;
         padding: 12.9px 49.54px 17.1px 43.46px;
         align-items: center;
         border-radius: 1.843px;
         border: 1px solid #BBB;
-        h1{
+
+        h1 {
           color: #212121;
           font-size: 18px;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
           text-transform: capitalize;
-          span{
+
+          span {
             color: rgba(51, 51, 51, 0.50);
             font-size: 18px;
             font-style: normal;
@@ -87,7 +100,8 @@ img{
             text-transform: capitalize;
           }
         }
-        h2{
+
+        h2 {
           color: var(--text-212121, #212121);
           font-size: 18px;
           font-style: normal;
@@ -97,23 +111,26 @@ img{
           margin: 0 0 0 161px;
         }
       }
-      &__spec{
+
+      &__spec {
         margin: 13px 0 13px 0;
 
         padding: 30.41px 104.46px 0 40.54px;
-        width:398px;
+        width: 398px;
         height: 246px;
         flex-shrink: 0;
         background: #FDFDFD;
         box-shadow: 4.607201099395752px 7.371521949768066px 22.114566802978516px 0 rgba(0, 0, 0, 0.10);
-        h1{
+
+        h1 {
           color: var(--text-212121, #212121);
           font-size: 18px;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
           text-transform: lowercase;
-          span{
+
+          span {
             color: rgba(51, 51, 51, 0.50);
             font-size: 18px;
             font-style: normal;
@@ -122,7 +139,8 @@ img{
             text-transform: capitalize;
           }
         }
-        h2{
+
+        h2 {
           margin: 7.49px 0 0 107px;
           color: var(--text-212121, #212121);
           font-size: 18px;
@@ -132,21 +150,24 @@ img{
           text-transform: capitalize;
         }
       }
-      &__language{
+
+      &__language {
         display: inline-flex;
         padding: 12.9px 129.457px 16.1px 40.543px;
         align-items: center;
         border-radius: 1.843px;
         border: 1px solid #BBB;
         width: 370px;
-        h1{
+
+        h1 {
           color: var(--text-212121, #212121);
           font-size: 20px;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
           text-transform: capitalize;
-          span{
+
+          span {
             color: rgba(51, 51, 51, 0.50);
             font-size: 20px;
             font-style: normal;

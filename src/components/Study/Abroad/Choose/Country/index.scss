@@ -26,6 +26,7 @@
       height: 210px;
       transition: .3s;
     }
+
     &--selects {
       display: flex;
       align-items: center;
@@ -56,7 +57,7 @@
     }
 
     &--one {
-      
+
 
       h4 {
         color: #b5b5b5;
@@ -95,7 +96,6 @@
         border: none;
         margin-left: -25px;
 
-        
 
         select {
           cursor: pointer;
@@ -230,4 +230,4 @@
         align-items: center;
         flex-wrap: wrap;
       }
-    }}}
+}

@@ -37,7 +37,6 @@ const CopyTextButton = ({ textToCopy }) => {
   );
 };
 
-
 const Message = () => {
   const [send, setSend] = useState(false);
   const [del, setDel] = useState(false);
@@ -55,7 +54,36 @@ const Message = () => {
   const input4 = document.querySelector(".group");
   const input5 = document.querySelector(".help");
 
+  const {language} = useLanguage()
 
+  const translations = {
+    EN: {
+      message: "Send a message",
+      message2: "First Name",
+      message3: "Last Name ",
+      message4: "phone",
+      message5: "email",
+      message6: "Group or Company",
+      message7: "How can we help?",
+      submit: "Submit",
+      open: "Open",
+      info:"Contact Info"
+
+    },
+    RU: {
+      message: "Отправить сообщение",
+      message2: "Имя",
+      message3: "Фамилия",
+      message4: "телефон",
+      message5: "электронная почта",
+      message6: "Группа или Компания",
+      message7: "Как мы можем помочь?",
+      submit:"Подавать",
+      open: 'Открыть',
+      info:"Контактная информация"
+
+    }
+  }
 
   const textToCopy = "+996500554422  motionweb312@gmail.com";
 
@@ -66,19 +94,19 @@ const Message = () => {
       <div className="container">
         <div className="message">
           <div className="message--input">
-            <h1>Send a message</h1>
+            <h1>{translations[language].message}</h1>
             <div className="message--input__name">
               <input
                 className="Name"
                 onChange={(e) => setValue(e.target.value)}
                 type="text"
-                placeholder="First Name"
+                placeholder={translations[language].message2}
               />
               <input
                 className="Last"
                 onChange={(e) => setValue1(e.target.value)}
                 type="text"
-                placeholder="Last Name "
+                placeholder={translations[language].message3}
               />
             </div>
             <div className="message--input__phone">
@@ -86,13 +114,13 @@ const Message = () => {
                 className="phone"
                 onChange={(e) => setValue2(e.target.value)}
                 type="nmber"
-                placeholder="phone"
+                placeholder={translations[language].message4}
               />
               <input
                 className="email"
                 onChange={(e) => setValue3(e.target.value)}
                 type="email  "
-                placeholder="email"
+                placeholder={translations[language].message5}
               />
             </div>
             <div className="message--input__group">
@@ -100,7 +128,7 @@ const Message = () => {
                 className="group"
                 onChange={(e) => setValue4(e.target.value)}
                 type="text"
-                placeholder="Group or Company"
+                placeholder={translations[language].message6}
               />
             </div>
             <div className="message--input__help">
@@ -108,7 +136,7 @@ const Message = () => {
                 className="help"
                 onChange={(e) => setValue5(e.target.value)}
                 type="text"
-                placeholder="How can we help?"
+                placeholder={translations[language].message7}
               />
             </div>
             <center style={{ display: "flex" }}>
@@ -122,14 +150,14 @@ const Message = () => {
                   input5.value = "";
                 }}
               >
-                Submit
+                {translations[language].submit}
               </button>
-              <button onClick={() => setDel(!del)}>Open</button>
+              <button onClick={() => setDel(!del)}>{translations[language].open}</button>
             </center>
           </div>
           <div className="message--contact">
             <div className="message--contact__info">
-              <h1>Contact Info</h1>
+              <h1>{translations[language].info}</h1>
               <div
                 style={{
                   display: "flex",

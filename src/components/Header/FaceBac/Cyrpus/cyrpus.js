@@ -3,9 +3,13 @@ import './index.scss'
 import {CiLocationOn} from "react-icons/ci"
 import {NavLink} from "react-router-dom";
 import {cyrpus} from "../index";
+import {getPrREC} from "../../../../Store/Reducers/Action";
+import {useDispatch} from "react-redux";
 
 
 const Cyrpus = () => {
+    const dispatch = useDispatch()
+
     return (
         <section id="cyrpus">
             <div className="container">
@@ -36,11 +40,11 @@ const Cyrpus = () => {
                 </div>
                 {
                     cyrpus.map(el => (
-                        <div className="cyrpus">
+                        <div className="cyrpus" onClick={() => dispatch(getPrREC(el))}>
                             <img src={el.img} alt="img" />
                             <div className="cyrpus--one">
-                                <h4>Name:</h4>
-                                <NavLink to='/tabs'><h3>{el.name}</h3></NavLink>
+                                <h4>Name: {el.name}</h4>
+                                <NavLink to="/tabs"><h3>{el.name}</h3></NavLink>
                             </div>
                             <div className="cyrpus--one">
                                 <h4>Location <CiLocationOn/></h4>

@@ -13,41 +13,107 @@ import cyprus from "../../../../Image/cyprus.svg";
 import China from "../../../../Image/China.svg";
 import latvia from "../../../../Image/latvia.svg";
 import { Link } from "react-router-dom";
+import {useLanguage} from "../../../LanguageFac/LanguageContext";
 
 
 
 const Flag = () => {
+    const {language} = useLanguage()
+
+    const translations = {
+        EN :{
+            muz: "Choose the country",
+            muz2: "Secondary Education",
+            muz3: "Specialization",
+            muz4: "Сountries" ,
+            muz5: "Secondary Education",
+            muz6: "Higher Education",
+            muz7: "language courses for youth",
+            muz8: "chilren's language comps",
+            muz9: "IT Technologies",
+            muz10: "Bisiness",
+            muz11: "Medicine",
+            muz12: "International Relationships",
+            muz13: "America",
+            muz14: "Germany",
+            muz15: "INDONESIA",
+            muz16: "South Korea",
+            muz17: "America",
+            muz18: "Great Britain",
+            muz19: "Austria",
+            muz20: "Germany",
+            muz21: "Holland",
+            muz22: "Ireland",
+            muz23: "Spain",
+            muz24: "Italy",
+            muz25: "Canada",
+            muz26: "Cyprus",
+            muz27: "China",
+            muz28: "Latvia",
+        },
+        RU: {
+            muz: "Выберите страну",
+            muz2: "Среднее образование",
+            muz3: "специализация",
+            muz4: "Страны",
+            muz5: "Среднее образование",
+            muz6: "Высшее образование",
+            muz7: "языковые курсы для молодежи",
+            muz8: "детские языковые курсы",
+            muz9: "ИТ-технологии",
+            muz10: "Бизнес",
+            muz11: "медицина",
+            muz12: "Международные отношения",
+            muz13: "Америка",
+            muz14: "Германия",
+            muz15: "ИНДОНЕЗИЯ",
+            muz16: "Южная Корея",
+            muz17: "Америка",
+            muz18: "Великобритания",
+            muz19: "Австрия",
+            muz20: "Германия",
+            muz21: "Голландия",
+            muz22: "Ирландия",
+            muz23: "Испания",
+            muz24: "Италия",
+            muz25: "Канада",
+            muz26: "Кипр",
+            muz27: "Китай",
+            muz28: "Латвия",
+        }
+    };
+
     return (
         <section id="flag">
 
             <div className="container">
-                <h1>Choose the country</h1>
+                <h1>{translations[language].muz}</h1>
                 <div className="flag">
                     <div className="flag--select">
                         <select>
-                            <option value="#">Higher Education</option>
-                            <option value="#">Secondary Education</option>
-                            <option value="#">Higher Education</option>
-                            <option value="#">language courses for youth</option>
-                            <option value="#">chilren's language comps</option>
+                            <option value="#">{translations[language].muz2}</option>
+                            <option value="#">{translations[language].muz5}</option>
+                            <option value="#">{translations[language].muz6}</option>
+                            <option value="#">{translations[language].muz7}</option>
+                            <option value="#">{translations[language].muz8}</option>
                         </select>
 
 
                         <select name="" id="">
-                            <option value="#">Specialization</option>
-                            <option value="#">IT Technologies</option>
-                            <option value="#">Bisiness</option>
-                            <option value="#">Medicine</option>
-                            <option value="#">International Relationships</option>
-                            <option value="#">Tourism</option>
+                            <option value="#">{translations[language].muz3}</option>
+                            <option value="#">{translations[language].muz9}</option>
+                            <option value="#">{translations[language].muz10}</option>
+                            <option value="#">{translations[language].muz11}</option>
+                            <option value="#">{translations[language].muz12}</option>
+                            <option value="#">{}</option>
                         </select>
                         <div className="flag--select__options">
                             <select name="" id="">
-                                <option value="#">Сountries</option>
-                                <option value="#">America</option>
-                                <option value="#">Germany</option>
-                                <option value="#">INDONESIA</option>
-                                <option value="#">South Korea</option>
+                                <option value="#">{translations[language].muz4}</option>
+                                <option value="#">{translations[language].muz13}</option>
+                                <option value="#">{translations[language].muz14}</option>
+                                <option value="#">{translations[language].muz15}</option>
+                                <option value="#">{translations[language].muz16}</option>
                             </select>
                         </div>
                     </div>
@@ -55,74 +121,74 @@ const Flag = () => {
                         <Link to={"/country"}>
                             <div className="flag--block__one">
                                 <img src={america} alt="img" />
-                                <h2>America</h2>
+                                <h2>{translations[language].muz17}</h2>
                             </div>
                         </Link>
 
                         <Link to={"/britan"}>
                             <div className="flag--block__one">
                                 <img src={greatBritan} alt="img" />
-                                <h2>Great Britain</h2>
+                                <h2>{translations[language].muz18}</h2>
                             </div>
                         </Link>
                         <Link to={"/austria"}>
                             <div className="flag--block__one">
                                 <img src={austria} alt="img" />
-                                <h2>Austria</h2>
+                                <h2>{translations[language].muz19}</h2>
                             </div>
                         </Link>
                          <Link to={"/germany"}>
                             <div className="flag--block__one">
                                 <img src={germany} alt="img" />
-                                <h2>germany</h2>
+                                <h2>{translations[language].muz20}</h2>
                             </div>
                         </Link>
                         <Link to={"/holland"}>
                             <div className="flag--block__one">
                                 <img src={holland} alt="img" />
-                                <h2>Holland</h2>
+                                <h2>{translations[language].muz21}</h2>
                             </div>
                         </Link>
                         <Link to={"/ireland"}>
                             <div className="flag--block__one">
                                 <img src={ireland} alt="img" />
-                                <h2>Ireland</h2>
+                                <h2>{translations[language].muz22}</h2>
                             </div>
                         </Link>
                         <Link to={"/spain"}>
                             <div className="flag--block__one">
                                 <img src={spain} alt="img" />
-                                <h2>Spain</h2>
+                                <h2>{translations[language].muz23}</h2>
                             </div>
                         </Link>
                         <Link to={"/italy"}>
                             <div className="flag--block__one">
                                 <img src={italy} alt="img" />
-                                <h2>Italy</h2>
+                                <h2>{translations[language].muz24}</h2>
                             </div>
                         </Link>
                         <Link to={"/canada"}>
                             <div className="flag--block__one">
                                 <img src={canada} alt="img" />
-                                <h2>Canada</h2>
+                                <h2>{translations[language].muz25}</h2>
                             </div>
                         </Link>
-                         <Link to={"/cyprus"}>
+                         <Link to={"/cyrpus"}>
                             <div className="flag--block__one">
                                 <img src={cyprus} alt="img" />
-                                <h2>Cyprus</h2>
+                                <h2>{translations[language].muz26}</h2>
                             </div>
                         </Link>
                         <Link to={"/china"}>
                             <div className="flag--block__one">
                                 <img src={China} alt="img" />
-                                <h2>China</h2>
+                                <h2>{translations[language].muz27}</h2>
                             </div>
                         </Link>
                         <Link to={"/latvia"}>
                             <div className="flag--block__one">
                                 <img src={latvia} alt="img" />
-                                <h2>Latvia</h2>
+                                <h2>{translations[language].muz28}</h2>
                             </div>
                         </Link>
                     </div>
