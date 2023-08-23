@@ -1,6 +1,12 @@
 #tabs{
   padding: 5% 0;
   .tabs{
+    &--block{
+      transition: .55s;
+      background: red;
+      width: 413px;
+      height: 2px;
+    }
     &--bloc{
       position: relative;
       width: 1240px;
@@ -12,6 +18,8 @@
       align-items: center;
       justify-content: space-around;
       &__description{
+        text-align: center;
+        width: 111px;
         cursor: pointer;
         color: var(--text-212121, #212121);
         font-size: 22px;
@@ -21,6 +29,8 @@
         text-transform: capitalize;
       }
       &__cost{
+        text-align: center;
+        width: 111px;
           cursor: pointer;
           color: var(--text-212121, #212121);
           font-size: 22px;
@@ -30,6 +40,8 @@
           text-transform: capitalize;
         }
       &__photo{
+        text-align: center;
+        width: 111px;
         cursor: pointer;
         color: var(--text-212121, #212121);
         font-size: 22px;
