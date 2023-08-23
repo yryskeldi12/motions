@@ -18,7 +18,7 @@
                          display: flex;
                          align-items: center;
                          justify-content: center;
-                         margin-left: 150px;
+                         margin-left: 275px;
 
                          .active {
                            position: relative;
@@ -38,7 +38,7 @@
                          }
 
                          h3 {
-                           margin: 0 25px;
+                           margin: 0 35px;
                            font-size: 16px;
                            color: black;
                            font-weight: 400;
@@ -154,9 +154,10 @@
 
                          p {
                            position: absolute;
-                           left: 10px;
+                           left: 15px;
                            cursor: pointer;
                            z-index: 2;
+                           color: #BBBBBB;
                          }
 
                          &__includes {
@@ -177,19 +178,32 @@
                          }
 
                          input {
-                           width: 187px;
-                           height: 43px;
-                           flex-shrink: 0;
-                           padding-left: 40px;
                            border-radius: 8px;
                            border: 0.8px solid rgba(86, 9, 187, 0.20);
                            opacity: 0.95;
                            background: rgba(255, 255, 255, 0.95);
+
+                           width: 187px;
+                           height: 43px;
+                           flex-shrink: 0;
+                           padding-left: 40px;
                            outline: none;
+
+                           color: #BBB;
+                           font-size: 14px;
+                           font-weight: 400;
+                           text-transform: capitalize;
                          }
 
                          &__option {
                            padding-left: 40px;
+                           color: var(--text-212121, #212121);
+                           text-align: center;
+                           font-size: 14px;
+                           font-style: normal;
+                           font-weight: 500;
+                           line-height: normal;
+                           text-transform: capitalize;
 
                            select {
                              border: none;

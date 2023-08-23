@@ -41,7 +41,7 @@ const Header = () => {
                     <div className="header--search">
                         <p><BsSearch onClick={() => setModal(!modal)}/></p>
                         <NavLink to="/country"> <input onChange={handleChane} type="search"
-                                                       placeholder="Поиск.."/></NavLink>
+                                                       placeholder="Поиск..."/></NavLink>
                         <div className="header--search__option">
                             <select>
                                 <option>

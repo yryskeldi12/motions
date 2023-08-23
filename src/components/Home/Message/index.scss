@@ -286,9 +286,11 @@
     position: fixed;
     width: 500px;
     height: 430px;
-    background: #3c3d42;
+    background: #ffffff;
     border-radius: 10px;
     z-index: 100;
+    border: 1px solid rgb(74, 41, 246);
+
     // position: fixed;
     // top: 0;
     // right: 30%;
@@ -304,7 +306,7 @@
 
     h2 {
         font-size: 34px;
-        color: #FFF;
+        color: #000000;
         cursor: pointer;
         padding-left: 220px;
 
@@ -314,10 +316,10 @@
     h1 {
         display: flex;
         align-items: center;
-        color: #FFF;
+        color: #000000;
         font-size: 24px;
         text-align: start;
-        border: 2px solid #9ccd62;
+        border: 2px solid rgba(74, 41, 246, 0.55);
         width: 400px;
         height: 50px;
         margin: 15px 40px;
@@ -717,6 +719,7 @@
 
 
     #message {
+        margin: 0 0 -600px 0;
 
         .container {
             .send {
@@ -1036,18 +1039,23 @@
     }
 }
 
-@media(max-width:450px) {
+@media(max-width:450px)     {
 
 
     #message {
 
         .container {
             .send {
-
+                width: 300px;
+                height: 234px;
+                left: 16%;
+                top: 15%;
                 h4 {}
 
                 button {
 
+                    padding: 14px 0 13px 0;
+                    width: 130px;
 
                     &:hover {}
 
@@ -1055,38 +1063,65 @@
 
                 h1 {}
 
-                p {}
+                p {
+
+                    padding: 14px 0 18px 0;
+
+                }
 
                 &--img {
+                    padding: 0px 0 19px 0;
+                    img {
 
-                    img {}
+                    }
                 }
             }
 
             .message {
 
                 &--input {
+                    width: 367px;
+                    height: 500px;
 
-                    button {}
+                    button {
+                        width: 105px;
+                        padding: 11px 65px 11px 53px;
+                        margin: 23px 0 0 42px;
+
+                    }
 
                     &:hover {}
 
                     &__name {
 
-                        input {}
+                        input {
+                            width: 284px;
+                            padding: 30px 0 0 0;
+
+                        }
                     }
 
                     &__phone {
-                        input {}
+                        input {
+                            width: 284px;
+                            padding: 30px 0 0 0;
+                        }
 
                     }
 
                     &__group {
-                        input {}
+                        input {
+                            padding: 30px 0 0 0;
+                            width: 284px;
+                        }
                     }
 
                     &__help {
-                        input {}
+                        input {
+                            width: 284px;
+                            padding: 30px 0 0 0;
+                            height: 20px;
+                        }
                     }
 
                     h1 {}
@@ -1095,7 +1130,8 @@
                 }
 
                 &--contact {
-
+                    width: 367px;
+                    height: 520px;
                     &__info {
 
                         h1 {}
@@ -1112,13 +1148,21 @@
 
                     &__map {
 
-                        iframe {}
+                        iframe {
+                            width: 289px;
+                            height: 192px;
+                        }
                     }
                 }
 
                 &--line {
-
+                    height: 550px;
+                    width: 308px;
+                    right: -50px;
+                    top: -535px;
                     div {
+                        left: -23px;
+                        bottom: 19px;
                         svg {}
                     }
                 }
@@ -1127,13 +1171,24 @@
     }
 
     .valve {
-
+        top: 18%;
+        left: 8%;
+        width: 374px;
+        height: 275px;
         h2 {}
 
-        h1 {}
+        h1 {
+            font-size: 18px;
+            width: 330px;
+            height: 31px;
+            margin: 9px 11px;
+        }
     }
 
-    .block1 {}
+    .block1 {
+        top: 73px;
+        left: 49px;
+    }
 }
 
 @media(max-width:400px) {
@@ -1200,7 +1255,7 @@
                     &__phone {
                         input {
                             width: 230px;
-                            padding: 35px 0 0 0;
+                            padding: 30px 0 0 0;
                             margin-left: 35px;
                         }
 
@@ -1436,7 +1491,8 @@
             .message {
 
                 &--input {
-
+                    height: 469px;
+                    width: 279px;
                     button {}
 
                     &:hover {}
@@ -1465,28 +1521,38 @@
                 }
 
                 &--contact {
-
+                    height: 400px;
+                    width: 274px;
                     &__info {
 
                         h1 {}
 
                         h4 {}
 
-                        h2 {}
+                        h2 {
+                            font-size: 15px;
+                        }
                     }
 
                     &__telegram {
-
+                        padding: 20px 0 5px 30px;
                         h1 {}
                     }
 
                     &__map {
 
-                        iframe {}
+                        iframe {
+                            width: 205px;
+                            height: 121px;
+                        }
                     }
                 }
 
                 &--line {
+                    height: 420px;
+                    width: 211px;
+                    right: -43px;
+                    top: -410px;
 
                     div {
                         svg {}
